@@ -1,0 +1,16 @@
+{
+  "name": "hermes_student-portal",
+  "version": "1.0.0",
+  "description": "Student Portal",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"yarn --cwd Client dev\" \"yarn --cwd Server dev\"",
+    "modules": "concurrently \"yarn --cwd Client\" \"yarn --cwd Server\" "
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "concurrently": "^9.0.1"  
+  }
+}
