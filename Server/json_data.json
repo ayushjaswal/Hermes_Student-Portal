@@ -1,0 +1,2760 @@
+[
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":120803121,
+        "Name":"YASH VERMA",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":120807722,
+        "Name":"LALIT SINGH",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":220803121,
+        "Name":"SHUBHAM SHARMA",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":220807722,
+        "Name":"AAKASH KUMAR",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":320803121,
+        "Name":"YATIN SANSANWAL",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":320807722,
+        "Name":"NIHARIKA SAINI",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":420803121,
+        "Name":"KUNAL RAWAT",
+        "Minor Specialization (if any)":"Artificial Intelligence and Machine Learning",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "ML\u2010407T",
+            "ML\u2010409T",
+            "ML\u2010411T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":420807722,
+        "Name":"AKSHAT TRIVEDI",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":520803121,
+        "Name":"YUVRAJ VEER DHAWAN",
+        "Minor Specialization (if any)":"Artificial Intelligence and Machine Learning",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "ML\u2010407T",
+            "ML\u2010409T",
+            "ML\u2010411T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":520807722,
+        "Name":"ARPIT RAI",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":620803121,
+        "Name":"HRITIK",
+        "Minor Specialization (if any)":"Artificial Intelligence and Machine Learning",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "ML\u2010407T",
+            "ML\u2010409T",
+            "ML\u2010411T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":620807722,
+        "Name":"SANJEEV KUMAR",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":720803121,
+        "Name":"ASHWIN GUPTA",
+        "Minor Specialization (if any)":"Artificial Intelligence and Machine Learning",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "ML\u2010407T",
+            "ML\u2010409T",
+            "ML\u2010411T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":720807722,
+        "Name":"BHAWNA KUMARI",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":820803121,
+        "Name":"ANURAG GUPTA",
+        "Minor Specialization (if any)":"Artificial Intelligence and Machine Learning",
+        "Subjects":[
+            "CIE\u2010409T",
+            "CIE\u2010431T",
+            "ML\u2010407T",
+            "ML\u2010409T",
+            "ML\u2010411T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":820807722,
+        "Name":"VAIBHAV SINGH",
+        "Minor Specialization (if any)":"Artificial Intelligence and Machine Learning",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "ML\u2010407T",
+            "ML\u2010409T",
+            "ML\u2010411T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":920803121,
+        "Name":"NEERAJ SAHITA",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":920807722,
+        "Name":"VIJENDER",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":1020803121,
+        "Name":"MANAV ARORA",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010409T",
+            "CIE\u2010431T",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":1020807722,
+        "Name":"KUNAL",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":1120803121,
+        "Name":"KRISHNA SHARMA",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":1120807722,
+        "Name":"DEEPAK PANDEY",
+        "Minor Specialization (if any)":"Artificial Intelligence and Machine Learning",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "ML\u2010407T",
+            "ML\u2010409T",
+            "ML\u2010411T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":1220803121,
+        "Name":"ADITYA SHARMA",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":1220807722,
+        "Name":"PRIYA KUMARI",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":1320803121,
+        "Name":"SANCHIT ARORA",
+        "Minor Specialization (if any)":"Artificial Intelligence and Machine Learning",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "ML\u2010407T",
+            "ML\u2010409T",
+            "ML\u2010411T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":1320807722,
+        "Name":"DURGESH KUMAR",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":1420803121,
+        "Name":"SMARTH MALIK",
+        "Minor Specialization (if any)":"Artificial Intelligence and Machine Learning",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "ML\u2010407T",
+            "ML\u2010409T",
+            "ML\u2010411T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":1420807722,
+        "Name":"MAYANK BIDHURI",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":1520803121,
+        "Name":"DEVANSH TREHAN",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":1520807722,
+        "Name":"ANKIT KUMAR",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":1620803121,
+        "Name":"SAHIL RAWAT",
+        "Minor Specialization (if any)":"Artificial Intelligence and Machine Learning",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "ML\u2010407T",
+            "ML\u2010409T",
+            "ML\u2010411T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":1620807722,
+        "Name":"VINAYAK YADAV",
+        "Minor Specialization (if any)":"Artificial Intelligence and Machine Learning",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "ML\u2010407T",
+            "ML\u2010409T",
+            "ML\u2010411T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":1720803121,
+        "Name":"NILESH JHA",
+        "Minor Specialization (if any)":"Artificial Intelligence and Machine Learning",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "ML\u2010407T",
+            "ML\u2010409T",
+            "ML\u2010411T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":1720807722,
+        "Name":"ABHISHEK PARIHAR",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":1820803121,
+        "Name":"GAURAV VERMA",
+        "Minor Specialization (if any)":"Artificial Intelligence and Machine Learning",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "ML\u2010407T",
+            "ML\u2010409T",
+            "ML\u2010411T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":1920803121,
+        "Name":"PIYUSH JAIN",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":2020803121,
+        "Name":"ARYAN NANDA",
+        "Minor Specialization (if any)":"Artificial Intelligence and Machine Learning",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "ML\u2010407T",
+            "ML\u2010409T",
+            "ML\u2010411T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":2120803121,
+        "Name":"VAIBHAV AGGARWAL",
+        "Minor Specialization (if any)":"Artificial Intelligence and Machine Learning",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "ML\u2010407T",
+            "ML\u2010409T",
+            "ML\u2010411T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":2220803121,
+        "Name":"PRIYANSH AZAD",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":2320803121,
+        "Name":"SUMIT BHARDWAJ",
+        "Minor Specialization (if any)":"Artificial Intelligence and Machine Learning",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "ML\u2010407T",
+            "ML\u2010409T",
+            "ML\u2010411T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":2420803121,
+        "Name":"HERAMB SHARMA",
+        "Minor Specialization (if any)":"Artificial Intelligence and Machine Learning",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "ML\u2010407T",
+            "ML\u2010409T",
+            "ML\u2010411T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":2520803121,
+        "Name":"ASHIT",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":2620803121,
+        "Name":"MASOOM MUSKAN",
+        "Minor Specialization (if any)":"Artificial Intelligence and Machine Learning",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "ML\u2010407T",
+            "ML\u2010409T",
+            "ML\u2010411T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":2720803121,
+        "Name":"ASHU MISHRA",
+        "Minor Specialization (if any)":"Artificial Intelligence and Machine Learning",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "ML\u2010407T",
+            "ML\u2010409T",
+            "ML\u2010411T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":2820803121,
+        "Name":"ABHISHEK",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":2920803121,
+        "Name":"SARANSH KHANDELWAL",
+        "Minor Specialization (if any)":"Artificial Intelligence and Machine Learning",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "ML\u2010407T",
+            "ML\u2010409T",
+            "ML\u2010411T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":3020803121,
+        "Name":"JAI",
+        "Minor Specialization (if any)":"Artificial Intelligence and Machine Learning",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "ML\u2010407T",
+            "ML\u2010409T",
+            "ML\u2010411T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":3120803121,
+        "Name":"NAVNEET KHATRI",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":3220803121,
+        "Name":"AYUSH",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":3320803121,
+        "Name":"UDISH RAWAL",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":3420803121,
+        "Name":"MANDEEP",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":3520803121,
+        "Name":"SAKSHI SARASWAT",
+        "Minor Specialization (if any)":"Artificial Intelligence and Machine Learning",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "ML\u2010407T",
+            "ML\u2010409T",
+            "ML\u2010411T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":3620803121,
+        "Name":"MAYANK NAILWAL",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":3720803121,
+        "Name":"SOURABH KALYAN",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":3920803121,
+        "Name":"UTKARSH ARORA",
+        "Minor Specialization (if any)":"Artificial Intelligence and Machine Learning",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "ML\u2010407T",
+            "ML\u2010409T",
+            "ML\u2010411T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":4020803121,
+        "Name":"PARINAY GOEL",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":4120803121,
+        "Name":"JAGRIT CHAWLA",
+        "Minor Specialization (if any)":"Artificial Intelligence and Machine Learning",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "ML\u2010407T",
+            "ML\u2010409T",
+            "ML\u2010411T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":4220803121,
+        "Name":"AKANKSHA MISHRA",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":4320803121,
+        "Name":"ANOUSHKA SINGH",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":4420803121,
+        "Name":"ROHIT MEHTA",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010409T",
+            "CIE\u2010419",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":4520803121,
+        "Name":"SURAJIT DAS",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010409T",
+            "CIE\u2010419",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":4720803121,
+        "Name":"ADITYA SINGH DANGI",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":4820803121,
+        "Name":"SHIVAM SINGH",
+        "Minor Specialization (if any)":"Artificial Intelligence and Machine Learning",
+        "Subjects":[
+            "CIE\u2010409T",
+            "CIE\u2010419",
+            "ML\u2010407T",
+            "ML\u2010409T",
+            "ML\u2010411T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":4920803121,
+        "Name":"ANKIT JAIN",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":5020803121,
+        "Name":"SARTHAK CHACHRA",
+        "Minor Specialization (if any)":"Artificial Intelligence and Machine Learning",
+        "Subjects":[
+            "CIE\u2010409T",
+            "CIE\u2010419",
+            "ML\u2010407T",
+            "ML\u2010409T",
+            "ML\u2010411T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":5120803121,
+        "Name":"DIPESH UPADHYAY",
+        "Minor Specialization (if any)":"Artificial Intelligence and Machine Learning",
+        "Subjects":[
+            "CIE\u2010409T",
+            "CIE\u2010419",
+            "ML\u2010407T",
+            "ML\u2010409T",
+            "ML\u2010411T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":5220803121,
+        "Name":"GAURANG RAWAT",
+        "Minor Specialization (if any)":"Artificial Intelligence and Machine Learning",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "ML\u2010407T",
+            "ML\u2010409T",
+            "ML\u2010411T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":5320803121,
+        "Name":"ANSH",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010409T",
+            "CIE\u2010431T",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":5420803121,
+        "Name":"HEMESH MEHTA",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010409T",
+            "CIE\u2010419",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":5520803121,
+        "Name":"SMRITI GROVER",
+        "Minor Specialization (if any)":"Artificial Intelligence and Machine Learning",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "ML\u2010407T",
+            "ML\u2010409T",
+            "ML\u2010411T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":5620803121,
+        "Name":"ROHIT GUPTA",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":5720803121,
+        "Name":"DAKSH",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":5820803121,
+        "Name":"AMRITANSH SRIVASTAVA",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":6020803121,
+        "Name":"SIDHARTH BENIWAL",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010409T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":6120803121,
+        "Name":"SHUBH GUPTA",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010409T",
+            "CIE\u2010419",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":6220803121,
+        "Name":"SRISHTI PANDEY",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010409T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":6320803121,
+        "Name":"ANURAG KUMAR",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010409T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":6420803121,
+        "Name":"ADITI KANSAL",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010409T",
+            "CIE\u2010431T",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":6620803121,
+        "Name":"SHIVAM KUMAR SINGH",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":6720803121,
+        "Name":"DEEPANSHU SHUKLA",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010409T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":6820803121,
+        "Name":"ANMOL PANDEY",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":6920803121,
+        "Name":"EKTA AGRAWAL",
+        "Minor Specialization (if any)":"Artificial Intelligence and Machine Learning",
+        "Subjects":[
+            "CIE\u2010409T",
+            "CIE\u2010419",
+            "ML\u2010407T",
+            "ML\u2010409T",
+            "ML\u2010411T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":7020803121,
+        "Name":"VANSHIKA ALANG",
+        "Minor Specialization (if any)":"Artificial Intelligence and Machine Learning",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "ML\u2010407T",
+            "ML\u2010409T",
+            "ML\u2010411T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":7120803121,
+        "Name":"ADITYA GUPTA",
+        "Minor Specialization (if any)":"Artificial Intelligence and Machine Learning",
+        "Subjects":[
+            "CIE\u2010409T",
+            "CIE\u2010419",
+            "ML\u2010407T",
+            "ML\u2010409T",
+            "ML\u2010411T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":7220803121,
+        "Name":"RUPAL MALHOTRA",
+        "Minor Specialization (if any)":"Artificial Intelligence and Machine Learning",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "ML\u2010407T",
+            "ML\u2010409T",
+            "ML\u2010411T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":7320803121,
+        "Name":"DEVESH KAJLA",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":7420803121,
+        "Name":"NIPUN BARYAH",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":7520803121,
+        "Name":"NACHIKETA NAG",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010409T",
+            "CIE\u2010419",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":7620803121,
+        "Name":"SAKSHAM CHAWLA",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010409T",
+            "CIE\u2010419",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":7720803121,
+        "Name":"AVINASH KUMAR",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":7820803121,
+        "Name":"MAHAPRASAD DEHURY",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":7920803121,
+        "Name":"MISHITA",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":8020803121,
+        "Name":"HIMANSHU RAWAT",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":8120803121,
+        "Name":"TAKSHU CHOUHAN",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010409T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":8220803121,
+        "Name":"SHAURYA CHAWLA",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010409T",
+            "CIE\u2010419",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":8320803121,
+        "Name":"KUNAL GUPTA",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010409T",
+            "CIE\u2010431T",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":8420803121,
+        "Name":"AALOK DHAWAN",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":8520803121,
+        "Name":"DIVYANSHU PRATAP SINGH",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":8620803121,
+        "Name":"PRIYANSHU SINGH",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":8720803121,
+        "Name":"BHAVYA GULATI",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":8820803121,
+        "Name":"SUHANI PANT",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":8920803121,
+        "Name":"DIVYANSH SINGH",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":9020803121,
+        "Name":"YASH DOBRIYAL",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":9120803121,
+        "Name":"C.S LAKSHMAN SUNDAR",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":9220803121,
+        "Name":"SAHIL MANSURI",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010409T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":9320803121,
+        "Name":"TUSHAR GARG",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010409T",
+            "CIE\u2010419",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":9420803121,
+        "Name":"SAKSHAM SHIL",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":9520803121,
+        "Name":"SRISHTI CHAUHAN",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010409T",
+            "CIE\u2010431T",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":9620803121,
+        "Name":"DEEPANSHU BALUNI",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":9720803121,
+        "Name":"SPRITI ANEJA",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010409T",
+            "CIE\u2010419",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":9820803121,
+        "Name":"BHAVYA MITTAL",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010409T",
+            "CIE\u2010431T",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":9920803121,
+        "Name":"ADITYA GARG",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":10120803121,
+        "Name":"DHRUV GOEL",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"B",
+        "Enroll.No.":10220803121,
+        "Name":"NISHANT BINDHANI",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":10320803121,
+        "Name":"SPARSH SETHI",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":10420803121,
+        "Name":"PRITAM GHARA",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":10520803121,
+        "Name":"SARTHAK GULATI",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":10620803121,
+        "Name":"TUSHAR SETHI",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":10720803121,
+        "Name":"AYUSH JASWAL",
+        "Minor Specialization (if any)":"Artificial Intelligence and Machine Learning",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "ML\u2010407T",
+            "ML\u2010409T",
+            "ML\u2010411T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":10820803121,
+        "Name":"HARSHITA GUPTA",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":10920803121,
+        "Name":"LOVE CHAUHAN",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":11020803121,
+        "Name":"MANISH KUMAR GUPTA",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":11120803121,
+        "Name":"DIKSHIKA AGGARWAL",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":11220803121,
+        "Name":"JATIN",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":11320803121,
+        "Name":"KISLAY KUMAR",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":11420803121,
+        "Name":"ANNANYA KUNDU",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":11520803121,
+        "Name":"SUMEET SINGH",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":11620803121,
+        "Name":"BHAWANSH BALEJA",
+        "Minor Specialization (if any)":"Artificial Intelligence and Machine Learning",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "ML\u2010407T",
+            "ML\u2010409T",
+            "ML\u2010411T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":11720803121,
+        "Name":"JYOTIRADITYA DWIVEDI",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010409T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":11820803121,
+        "Name":"AYUSH ANAND",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":11920803121,
+        "Name":"HARSH VARDHAN SHARMA",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":12020803121,
+        "Name":"LOKESH KUMAR",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":12120803121,
+        "Name":"DAKSH SARDANA",
+        "Minor Specialization (if any)":"Artificial Intelligence and Machine Learning",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "ML\u2010407T",
+            "ML\u2010409T",
+            "ML\u2010411T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":12220803121,
+        "Name":"ANURAAG KUMAR",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":12320803121,
+        "Name":"RISHABH SINGH",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":12420803121,
+        "Name":"YASH TOMAR",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":12520803121,
+        "Name":"JAI PANDEY",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":12620803121,
+        "Name":"VIKASH KUMAR",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":12720803121,
+        "Name":"ANKIT",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":12820803121,
+        "Name":"ROHAN GUPTA",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":12920803121,
+        "Name":"RAGHVENDER JHA",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":13020803121,
+        "Name":"URVASHI AGGARWAL",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":13120803121,
+        "Name":"SIDDHARTH DEVRANI",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":13220803121,
+        "Name":"ATAF ALI",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":13320803121,
+        "Name":"PRINCE",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":13420803121,
+        "Name":"RAHUL RAJ",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":13520803121,
+        "Name":"OMJI",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":13620803121,
+        "Name":"PIYUSH GOEL",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":13720803121,
+        "Name":"GAUTAM KUMAR MISHRA",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":13820803121,
+        "Name":"RISHABH TRIPATHI",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":13920803121,
+        "Name":"AMISHA GUPTA",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":14020803121,
+        "Name":"ISHAAN RAWAT",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":14120803121,
+        "Name":"SACHIN THAKUR",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":14320803121,
+        "Name":"SHUBHI PODDAR",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":14420803121,
+        "Name":"JAHID KHAN",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":14520803121,
+        "Name":"AYAN KHAN",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":14620803121,
+        "Name":"SAURABH KUMAR",
+        "Minor Specialization (if any)":"Artificial Intelligence and Machine Learning",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "ML\u2010407T",
+            "ML\u2010409T",
+            "ML\u2010411T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":14720803121,
+        "Name":"RUPAL RASTOGI",
+        "Minor Specialization (if any)":"Artificial Intelligence and Machine Learning",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "ML\u2010407T",
+            "ML\u2010409T",
+            "ML\u2010411T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":14820803121,
+        "Name":"ATUL KUMAR",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":14920803121,
+        "Name":"ADITYA SHARMA",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":15020803121,
+        "Name":"JASMIN",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":15220803121,
+        "Name":"DEEPAK KUMAR",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":15320803121,
+        "Name":"DEEPIKA",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":20120803121,
+        "Name":"ASMITA YADAV",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":20220803121,
+        "Name":"AMAN BALUNI",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":20320803121,
+        "Name":"ANURAG SHARMA",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":20420803121,
+        "Name":"SUYASH ANAND",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":20520803121,
+        "Name":"SHAGUN SHARMA",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":20620803121,
+        "Name":"ATISHAY JAIN",
+        "Minor Specialization (if any)":"Artificial Intelligence and Machine Learning",
+        "Subjects":[
+            "CIE\u2010409T",
+            "CIE\u2010419",
+            "ML\u2010407T",
+            "ML\u2010409T",
+            "ML\u2010411T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":20720803121,
+        "Name":"VANSHIKA SINGH",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":20820803121,
+        "Name":"ANUSHKA SINGH",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":20920803121,
+        "Name":"KUNAL CHAUHAN",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":21020803121,
+        "Name":"YAHSIKA JAIN",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":21120803121,
+        "Name":"AARUSHI JINDAL",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":21220803121,
+        "Name":"DIVYANSHI HARKHKA",
+        "Minor Specialization (if any)":"Artificial Intelligence and Machine Learning",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "ML\u2010407T",
+            "ML\u2010409T",
+            "ML\u2010411T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":35120803121,
+        "Name":"RIYA CHADHA",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":35120807722,
+        "Name":"DEEPANSHU SHARMA",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":35220803121,
+        "Name":"TANISHQ BANSAL",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":35320803121,
+        "Name":"NISHANT AGGARWAL",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":35420803121,
+        "Name":"AGRIMA AGARWAL",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":35520803121,
+        "Name":"CHAVI JAIN",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":35620803121,
+        "Name":"SHIVANSH KAUSHIK",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":35720803121,
+        "Name":"YASHIKA TYAGI ",
+        "Minor Specialization (if any)":"Artificial Intelligence and Machine Learning",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "ML\u2010407T",
+            "ML\u2010409T",
+            "ML\u2010411T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":35820803121,
+        "Name":"RIDHIMA JAIN",
+        "Minor Specialization (if any)":"Artificial Intelligence and Machine Learning",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "ML\u2010407T",
+            "ML\u2010409T",
+            "ML\u2010411T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":35920803121,
+        "Name":"TANMAY JOSHI",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":36020803121,
+        "Name":"PRANAV CHAUHAN",
+        "Minor Specialization (if any)":"Artificial Intelligence and Machine Learning",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "ML\u2010407T",
+            "ML\u2010409T",
+            "ML\u2010411T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":36120803121,
+        "Name":"LAVANYA SHARMA",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":36220803121,
+        "Name":"KUSHAGRA KALRA",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":36320803121,
+        "Name":"ARYAN SHARMA",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":36420803121,
+        "Name":"KARTIKEYA RAJPUT",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":36520803121,
+        "Name":"KAMAL MUSHUNI",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":36620803121,
+        "Name":"SANSKAR",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":36720803121,
+        "Name":"TUSHAR GOEL ",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010431T",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"A",
+        "Enroll.No.":36820803121,
+        "Name":"LAKSHAY SHARMA",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":50120803121,
+        "Name":"YASH AGGARWAL",
+        "Minor Specialization (if any)":"Data Science",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "DS\u2010427T",
+            "DS\u2010429T",
+            "DS\u2010431T"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":75120803121,
+        "Name":"ANAMIKA CHOUDHARY",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    },
+    {
+        "Branch ":"IT",
+        "Section \/ Batch":"C",
+        "Enroll.No.":75220803121,
+        "Name":"MUKESH KUMAR",
+        "Minor Specialization (if any)":"Software Engineering",
+        "Subjects":[
+            "CIE\u2010407T",
+            "CIE\u2010419",
+            "SE\u2010483T",
+            "SE\u2010485",
+            "SE\u2010489"
+        ]
+    }
+]
