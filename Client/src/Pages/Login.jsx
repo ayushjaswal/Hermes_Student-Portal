@@ -5,9 +5,10 @@ import { addUser } from "@/store/features/user";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import Typical from "react-typical";
 import { TailSpin } from "react-loader-spinner";
+import { toast, Toaster } from "sonner";
 
 const Login = () => {
   const [loginData, setLoginData] = useState({
@@ -17,29 +18,41 @@ const Login = () => {
   });
   const dispatch = useDispatch();
   const navigate = useNavigate();
+  const location = useLocation();
   const user = useSelector((state) => state.user);
   const [loginingIn, setLoginingIn] = useState(false);
 
   const handleLogin = async (e) => {
     setLoginingIn(true);
-    e.preventDefault();
-    console.log(loginData);
-    const result = await axios.post(`${path}/auth`, loginData, config);
-    console.log(result.data);
-    if (result.data.firstTimer) {
-      navigate("/change-password", { state: { email: loginData.email } });
-    } else {
-      dispatch(addUser(result.data));
+    try {
+      e.preventDefault();
+      console.log(loginData);
+      const result = await axios.post(`${path}/auth`, loginData, config);
+      console.log(result.data);
+      if (result.data.firstTimer) {
+        navigate("/change-password", { state: { email: loginData.email } });
+      } else {
+        dispatch(addUser(result.data));
+      }
+      console.log(result)
+      if (result.data.error) {
+        toast.error(result.error);
+      }
+    } catch (error) {
+      console.log(error.message);
+    } finally {
+      setLoginingIn(false);
     }
-    setLoginingIn(false);
   };
   useEffect(() => {
     if (user.email) {
-      navigate("/dashboard");
+      console.log(location);
+      navigate(`${location.state?.from.pathname}`);
     }
-  }, [navigate, user]);
+  }, [navigate, user, location.state]);
   return (
     <div className="flex">
+      <Toaster richColors position="bottom-right" />
       <div className="flex w-full h-[100vh] items-center justify-center ">
         <form onSubmit={handleLogin} className="flex flex-col gap-3  w-[50%]">
           <h1 className="title">Login</h1>
@@ -79,7 +92,7 @@ const Login = () => {
             <label htmlFor="faculty">Are you a faculty?</label>
           </div>
           <Button variant="primary" type="submit" className="btn">
-            {loginingIn ? <TailSpin height={16} color="white"/> : "Login"}
+            {loginingIn ? <TailSpin height={16} color="white" /> : "Login"}
           </Button>
         </form>
       </div>

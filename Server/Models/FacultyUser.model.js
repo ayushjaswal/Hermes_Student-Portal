@@ -3,12 +3,11 @@ import mongoose, { model, Schema } from "mongoose";
 const facultyUserModel = new Schema(
   {
     email: { type: String, required: true, unique: true },
-    firstName: { type: String, required: true, unique: true },
-    secondName: { type: String, required: true, unique: true },
+    name: {type: String, required: true},
     avatar: { type: String },
-    DOB: { type: Date, required: true, unique:true },
-    phoneNumber: { type: String, required: true, unique:true },
-    subjects: [{ type: mongoose.Types.ObjectId, ref: 'Subject' }]
+    DOB: { type: Date, unique:true },
+    phoneNumber: { type: String, unique:true },
+    subjects: [{ type: mongoose.Types.ObjectId, ref: 'subject' }]
   },
   { timestamps: true }
 );

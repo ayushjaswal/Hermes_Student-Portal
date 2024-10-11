@@ -3,6 +3,7 @@ import student from "../Models/StudentUser.model.js";
 import faculty from "../Models/FacultyUser.model.js";
 import subject from "../Models/Subject.model.js";
 import branch from "../Models/Branch.model.js";
+import user from "../Models/User.model.js";
 import fs from "fs";
 
 // Function to insert student data from JSON
@@ -12,12 +13,16 @@ export const insertStudents = async (req, res) => {
     for (let i = 0; i < data.length; i++) {
       let subjectArray = [];
       for (let j = 0; j < data[i].Subjects.length; j++) {
-        const subject = await subject.findOne({ paperName: data[i].Subjects[j] })
+        const subject = await subject.findOne({
+          paperName: data[i].Subjects[j],
+        });
         subjectArray.push(subject._id);
       }
       let emailString = "";
-      emailString += data[i].Name.split(" ")[0] + data[i]['Enroll.No.'].toString().spli("208")[0];
-      switch (data[i].Branch ){
+      emailString +=
+        data[i].Name.split(" ")[0] +
+        data[i]["Enroll.No."].toString().spli("208")[0];
+      switch (data[i].Branch) {
         case "CSE":
           data[i].Branch = "";
           break;
@@ -34,7 +39,7 @@ export const insertStudents = async (req, res) => {
           data[i].Branch = "Unknown";
           break;
       }
-      const newStudent = await student({subjects: subjectArray, });
+      const newStudent = await student({ subjects: subjectArray });
     }
     return res
       .status(200)
@@ -47,25 +52,63 @@ export const insertStudents = async (req, res) => {
 
 export const inserSingleStudent = async (req, res) => {
   try {
-    const {email, enrollment, name, branchName, subjects} = req.body;
-    const branchDb = await branch.findOne({ branchName })
-    
+    const { email, enrollment, name, branchName, subjects } = req.body;
+    const branchDb = await branch.findOne({ branchName });
+
     const branchId = branchDb?._id;
+    console.log({ branchId });
     let subjectArray = [];
+    console.log(subjects);
     for (let i = 0; i < subjects?.length; i++) {
-      const subjectDb = await subject.findOne({ paperCode: subjects[i] });
+      const normalizedCode = subjects[i].replace(/[\u2010]/g, '‐');
+      const subjectDb = await subject.findOne({
+        paperCode: normalizedCode,
+      });
       subjectArray.push(subjectDb?._id);
     }
-    const newStudent = await student.create({email, enrollment, name, branch: branchId, subjects: subjectArray})
-    const newUser = await user.create({email, password: enrollment });
-    return res
-      .status(200)
-      .json({ message: "Student created successfully" });
+    console.log(subjectArray);
+    const newStudent = await student.create({
+      email,
+      enrollment,
+      name,
+      branchId,
+      subjects: subjectArray,
+    });
+    const newUser = await user.create({ email, password: enrollment });
+    return res.status(200).json({ message: "Student created successfully" });
   } catch (error) {
-    console.error(error);
+    console.error(error.message);
     return res.status(500).json({ error: "Error creating student data" });
   }
-}
+};
+export const inserSingleFaculty = async (req, res) => {
+  try {
+    const { email, name, subjects, avatar } = req.body;
+    let subjectArray = [];
+    console.log(subjects);
+
+    const newFaculty = await faculty.create({
+      email,
+      name,
+      avatar
+    });
+    for (let i = 0; i < subjects?.length; i++) {
+      const normalizedCode = subjects[i].replace(/[\u2010]/g, '‐');
+      const subjectDb = await subject.findOne({
+        paperCode: normalizedCode,
+      });
+      newFaculty.subjects.push(subjectDb?._id);
+      subjectDb.associatedFaculty.push(newFaculty._id);
+      await newFaculty.save();
+      await subjectDb.save();
+    }
+    const newUser = await user.create({ email, password: email });
+    return res.status(200).json({ message: " created successfully" });
+  } catch (error) {
+    console.error(error.message);
+    return res.status(500).json({ error: "Error creating student data" });
+  }
+};
 
 // Function to insert faculty data from JSON
 export const insertFaculty = async (req, res) => {

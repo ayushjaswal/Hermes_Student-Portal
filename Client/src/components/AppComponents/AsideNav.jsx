@@ -30,7 +30,6 @@ const AsideNav = () => {
   const location = useLocation();
 
   const handleNavRoute = (nav) => {
-    console.log(location.pathname);
     navigate(nav.path);
   };
 
@@ -42,13 +41,13 @@ const AsideNav = () => {
   };
 
   return (
-    <aside className="flex flex-col p-4 gap-2 h-[100vh] bg-gray-100 justify-between">
-      <div className=" flex flex-col gap-2">
+    <aside className="flex md:flex-col p-4 gap-2 md:h-[100vh] bg-gray-100 justify-between">
+      <div className=" flex md:flex-col gap-2 ">
         {navMenu.map((elm) => (
           <div
             className={
               "nav-elm flex gap-2 " +
-              (location.pathname == elm.path
+              (location.pathname.includes(elm.path)
                 ? " active-nav-elm text-white"
                 : "")
             }
@@ -62,7 +61,7 @@ const AsideNav = () => {
               src={elm.icon}
               alt="nav-icon"
             />
-            {elm.route}
+            <div className="hidden md:block">{elm.route}</div>
           </div>
         ))}
       </div>

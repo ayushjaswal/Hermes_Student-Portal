@@ -7,8 +7,8 @@ import {
   getData,
   getSubjectData,
   inserSingleStudent,
+  inserSingleFaculty,
 } from "../Controllers/dataControllers.js";
-import { authorization } from "../middlewares/auth.js";
 
 const router = express.Router();
 
@@ -19,5 +19,6 @@ router.get("/insert-subjects", insertSubjects);
 router.get("/", getData);
 router.get("/subjects", getSubjectData);
 router.post("/create-student", inserSingleStudent);
+router.post("/create-faculty", inserSingleFaculty);
 
 export default router;

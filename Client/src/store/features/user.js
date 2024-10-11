@@ -3,10 +3,10 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   email: "",
   enrollment: "",
+  avatar: "",
   ABCId: "",
   DOB: "",
-  firstName: "",
-  secondName: "",
+  name:"",
   subjects: [],
   _id: "",
 };
@@ -19,9 +19,9 @@ export const userSlice = createSlice({
       state.email = action.payload.email;
       state.enrollment = action.payload.enrollment;
       state.ABCId = action.payload.ABCId;
+      state.avatar = action.payload.avatar;
       state.DOB = action.payload.DOB;
-      state.firstName = action.payload.firstName;
-      state.secondName = action.payload.secondName;
+      state.name = action.payload.name;
       state._id = action.payload._id;
       state.subjects = action.payload.subjects;
     },
@@ -30,8 +30,8 @@ export const userSlice = createSlice({
       state.enrollment = "";
       state.ABCId = "";
       state.DOB = "";
-      state.firstName = "";
-      state.secondName = "";
+      state.avatar = "";
+      state.name = "";
       state._id = "";
       state.subjects = [];
     },

@@ -9,9 +9,9 @@ const studentUserSchema = new Schema(
     DOB: { type: Date, unique: true },
     phoneNumber: { type: String, unique: true },
     ABCId: { type: String, unique: true },
-    branchId: { type: mongoose.Types.ObjectId, required: true, ref: "Branch" },
+    branchId: { type: mongoose.Types.ObjectId, required: true, ref: "branch" },
     subjects: [
-      { type: mongoose.Types.ObjectId, required: true, ref: "Subject" },
+      { type: mongoose.Types.ObjectId, required: true, ref: "subject" },
     ],
   },
   { timestamps: true }

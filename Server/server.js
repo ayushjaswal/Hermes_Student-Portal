@@ -26,6 +26,7 @@ import bodyParser from "body-parser";
 import dotenv from "dotenv";
 import cors from "cors";
 import authRoutes from "./Routes/authRoutes.js";
+import classRoutes from "./Routes/classRoutes.js";
 import connect from "./config/db.js";
 import cookieParser from "cookie-parser";
 import dataRoutes from "./Routes/dataRoutes.js";
@@ -61,6 +62,7 @@ connect();
 // API routes for APP
 app.use("/auth", authRoutes);
 app.use("/data", dataRoutes);
+app.use("/class", classRoutes)
 
 // Starting the server on port 8080
 const PORT = 8080;
