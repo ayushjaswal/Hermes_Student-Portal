@@ -91,8 +91,6 @@ export const loginUser = async (req, res) => {
         }
       }
     }
-    // var hash = bcryptjs.hashSync(password, 8);
-    return res.json({ status: 200 });
   } catch (err) {
     console.error(err);
     return res.json({ error: err.message });

@@ -47,7 +47,11 @@ const Login = () => {
   useEffect(() => {
     if (user.email) {
       console.log(location);
-      navigate(`${location.state?.from.pathname}`);
+      if (location.state?.from.pathname) {
+        navigate(`${location.state?.from.pathname}`);
+      } else {
+        navigate("/dashboard");
+      }
     }
   }, [navigate, user, location.state]);
   return (

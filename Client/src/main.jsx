@@ -15,6 +15,8 @@ import ChangePassword from "./Pages/ChangePassword.jsx";
 import Classroom from "./Pages/Classroom.jsx";
 import Assignment from "./Pages/Assignments.jsx";
 import CoursePage from "./Pages/CoursePage.jsx";
+import EditProfile from "./Pages/EditProfile.jsx";
+import { Edit } from "lucide-react";
 
 const router = createBrowserRouter([
   {
@@ -66,6 +68,14 @@ const router = createBrowserRouter([
     element: (
       <ProtectedRoute>
         <Assignment />
+      </ProtectedRoute>
+    ),
+  },
+  {
+    path: "/profile/edit",
+    element: (
+      <ProtectedRoute>
+        <EditProfile />
       </ProtectedRoute>
     ),
   },

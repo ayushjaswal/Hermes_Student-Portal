@@ -6,21 +6,26 @@ import axios from "axios";
 import { config, path } from "@/path";
 import { useState } from "react";
 import { TailSpin } from "react-loader-spinner";
+import dashboardIcon from "../../assets/dashboard.svg";
+import classIcon from "../../assets/class.svg";
+import courseIcon from "../../assets/course.svg";
+import profileIcon from "../../assets/profile.svg";
+import assignmentIcon from "../../assets/assignment.svg";
 
 const AsideNav = () => {
   const dispatch = useDispatch();
   const [loginingOut, setLoginginOut] = useState(false);
   const navMenu = [
     {
-      icon: "src/assets/dashboard.svg",
+      icon: dashboardIcon,
       route: "Dashboard",
       path: "/dashboard",
     },
-    { icon: "src/assets/class.svg", route: "Classroom", path: "/classroom" },
-    { icon: "src/assets/course.svg", route: "Courses", path: "/courses" },
-    { icon: "src/assets/profile.svg", route: "Profile", path: "/profile" },
+    { icon: classIcon, route: "Classroom", path: "/classroom" },
+    { icon: courseIcon, route: "Courses", path: "/courses" },
+    { icon: profileIcon, route: "Profile", path: "/profile" },
     {
-      icon: "src/assets/assignment.svg",
+      icon: assignmentIcon,
       route: "Assignment",
       path: "/assignments",
     },
@@ -41,7 +46,7 @@ const AsideNav = () => {
   };
 
   return (
-    <aside className="flex md:flex-col p-4 gap-2 md:h-[100vh] bg-gray-100 justify-between">
+    <aside className="flex md:flex-col p-4 gap-2 md:h-[100vh] w-[12rem] bg-gray-100 justify-between">
       <div className=" flex md:flex-col gap-2 ">
         {navMenu.map((elm) => (
           <div
@@ -56,10 +61,10 @@ const AsideNav = () => {
           >
             <img
               className={
-                "" + (location.pathname !== elm.path ? "  " : "invert ")
+                "" + (!location.pathname.includes(elm.path) ? "  " : "invert ")
               }
               src={elm.icon}
-              alt="nav-icon"
+              alt={elm.route + "-icon"}
             />
             <div className="hidden md:block">{elm.route}</div>
           </div>

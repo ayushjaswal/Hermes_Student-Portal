@@ -34,11 +34,7 @@ dotenv.config(); // for parsing env files
 
 const app = express();
 
-// Middleware setup
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
-app.use(cookieParser())
-app.use(express.json());
+console.log(process.env.CLIENT)
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", process.env.CLIENT);
   res.header(
@@ -56,16 +52,27 @@ const corsOptions = {
 };
 app.use(cors(corsOptions));
 
+
+// CORS options
+
+
+// Middleware setup
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+app.use(cookieParser());
+app.use(express.json());
+
 // Connect to MongoDB
 connect();
 
 // API routes for APP
+
 app.use("/auth", authRoutes);
 app.use("/data", dataRoutes);
-app.use("/class", classRoutes)
+app.use("/class", classRoutes);
 
 // Starting the server on port 8080
-const PORT = 8080;
+const PORT = 5123;
 app.listen(PORT, () => {
   console.log(`Server is up and running on port ${PORT}`);
 });

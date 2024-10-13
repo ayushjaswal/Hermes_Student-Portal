@@ -91,6 +91,25 @@
   .link{ 
     @apply hover:text-blue-600 hover:underline transition ease-in-out;
   }
+  .label {
+    width: 150px; /* Set a fixed width for labels */
+    font-weight: bold; /* Make labels stand out */
+    margin-right: 10px; /* Space between label and input */
+  }
+  
+  .inp {
+    flex: 1; /* Allow input to take the remaining space */
+    padding: 8px; /* Uniform padding */
+    border: 1px solid #ccc; /* Light border for input */
+    border-radius: 4px; /* Slightly rounded corners */
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); /* Subtle inset shadow */
+  }
+  
+  .inp:disabled {
+    background-color: #f9f9f9; /* Light background for disabled inputs */
+    color: #888; /* Greyed out text for disabled inputs */
+    cursor: not-allowed; /* Change cursor for disabled inputs */
+  }
   @keyframes gradient {
     0% {
       background-position: 0% 50%;
