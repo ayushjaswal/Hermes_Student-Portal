@@ -30,6 +30,7 @@ import student from "../Models/StudentUser.model.js";
 import faculty from "../Models/FacultyUser.model.js";
 import jwt from "jsonwebtoken";
 import dotenv from "dotenv";
+import { jwtDecode } from "jwt-decode";
 
 dotenv.config();
 const jwtPrivateKey = process.env.JWT_PRIVATE_KEY;
@@ -109,7 +110,9 @@ export const changePassword = async (req, res) => {
       userDB
         .save()
         .then(() => {
-          return res.status(200).json({ success: true, message: "Password changed successfully" });
+          return res
+            .status(200)
+            .json({ success: true, message: "Password changed successfully" });
         })
         .catch((err) => {
           return res.status(400).json({ error: "Failed to change password" });
@@ -138,7 +141,9 @@ export const tokenLogin = async (req, res) => {
     if (isFaculty) {
       result = await faculty.findOne({ email });
     } else {
-      result = await student.findOne({ email });
+      result = await student
+        .findOne({ email })
+        .populate(["branchId", "subjects"]);
     }
     return res.status(200).json(result);
   } catch (error) {
@@ -154,5 +159,25 @@ export const logoutUser = (req, res) => {
     res.json({ message: "User logged out successfully" });
   } catch (error) {
     return res.status(500).json(error);
+  }
+};
+
+export const editProfile = async (req, res) => {
+  try {
+    const { ABCId, DOB, avatar } = req.body;
+    const { email } = jwtDecode(req.token);
+    console.log(email)
+    const userDb = await student.updateOne({ email }, { avatar, DOB, ABCId });
+    console.log(userDb)
+    if (userDb) {
+      return res
+        .status(200)
+        .json({ success: true, message: "Profile edited successfully" });
+    } else {
+      return res.status(400).json({ error: "Failed to edit profile" });
+    }
+  } catch (error) {
+    console.error(error);
+    return res.status(500).json({ error: error.message });
   }
 };

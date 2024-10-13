@@ -1,17 +1,17 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = [];
+const initialState = {
+  subjects: []
+};
 
 const subjectsSlice = createSlice({
   name: "subjects",
   initialState,
   reducers: {
     addSubject: (state, action) => {
-      for (const subject of action.payload.subjects) {
-        state.push(subject);
-      }
+      state.subjects = action.payload.subjects;
     },
-    clearSubjects: (state) => {
+    clearSubjects: () => {
       return [];
     },
   },

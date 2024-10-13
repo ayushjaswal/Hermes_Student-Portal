@@ -72,7 +72,7 @@ app.use("/data", dataRoutes);
 app.use("/class", classRoutes);
 
 // Starting the server on port 8080
-const PORT = 5123;
+const PORT = 8080;
 app.listen(PORT, () => {
   console.log(`Server is up and running on port ${PORT}`);
 });

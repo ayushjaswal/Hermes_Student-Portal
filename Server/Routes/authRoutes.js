@@ -15,7 +15,7 @@
  */
 
 import express from "express";
-import  { changePassword, loginUser, logoutUser, tokenLogin } from "../Controllers/authControllers.js";
+import  { changePassword, loginUser, logoutUser, tokenLogin, editProfile } from "../Controllers/authControllers.js";
 import { authorization } from "../middlewares/auth.js";
 
 const router = express.Router();
@@ -25,5 +25,6 @@ router.post("/", loginUser);
 router.post("/change-password", changePassword);
 router.get("/tokenLogin", authorization, tokenLogin);
 router.get("/logout", authorization, logoutUser)
+router.post("/edit-profile", authorization, editProfile);
 // Export the router for use in the main server file
 export default router;

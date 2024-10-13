@@ -8,6 +8,7 @@ const initialState = {
   DOB: "",
   name:"",
   subjects: [],
+  branchId: {},
   _id: "",
 };
 
@@ -22,6 +23,7 @@ export const userSlice = createSlice({
       state.avatar = action.payload.avatar;
       state.DOB = action.payload.DOB;
       state.name = action.payload.name;
+      state.branchId = action.payload.branchId;
       state._id = action.payload._id;
       state.subjects = action.payload.subjects;
     },

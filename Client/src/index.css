@@ -73,10 +73,10 @@
   .nav-elm {
     @apply px-6 py-2 transition ease-in-out cursor-pointer hover:bg-blue-200 rounded-md;
   }
-  .active-nav-elm{
-    @apply bg-gradient-to-r from-cyan-500 to-blue-500 text-white ;
+  .active-nav-elm {
+    @apply bg-gradient-to-r from-cyan-500 to-blue-500 text-white;
   }
-  .active-nav-elm:hover{
+  .active-nav-elm:hover {
     @apply bg-blue-500 text-white;
   }
   .title {
@@ -88,28 +88,30 @@
   .btn {
     @apply bg-blue-600 text-white py-1 rounded-md hover:bg-blue-700 transition ease-in-out;
   }
-  .link{ 
+  .link {
     @apply hover:text-blue-600 hover:underline transition ease-in-out;
   }
+
   .label {
-    width: 150px; /* Set a fixed width for labels */
-    font-weight: bold; /* Make labels stand out */
-    margin-right: 10px; /* Space between label and input */
+    width: 150px;
+    font-weight: bold;
+    margin-right: 10px;
   }
-  
+
   .inp {
-    flex: 1; /* Allow input to take the remaining space */
-    padding: 8px; /* Uniform padding */
-    border: 1px solid #ccc; /* Light border for input */
-    border-radius: 4px; /* Slightly rounded corners */
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); /* Subtle inset shadow */
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   }
-  
+
   .inp:disabled {
-    background-color: #f9f9f9; /* Light background for disabled inputs */
-    color: #888; /* Greyed out text for disabled inputs */
-    cursor: not-allowed; /* Change cursor for disabled inputs */
+    background-color: #f9f9f9;
+    color: #888;
+    cursor: not-allowed;
   }
+
   @keyframes gradient {
     0% {
       background-position: 0% 50%;
@@ -120,5 +122,29 @@
     100% {
       background-position: 0% 50%;
     }
+  }
+
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f0f0f0;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 6px;
+    border: 2px solid #f0f0f0;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+
+  * {
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+    scroll-snap-type: mandatory;
   }
 }

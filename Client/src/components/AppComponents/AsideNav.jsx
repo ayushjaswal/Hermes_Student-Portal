@@ -46,7 +46,7 @@ const AsideNav = () => {
   };
 
   return (
-    <aside className="flex md:flex-col p-4 gap-2 md:h-[100vh] w-[12rem] bg-gray-100 justify-between">
+    <aside className="flex md:flex-col p-4 gap-2 md:h-[100vh] md:w-[12rem] bg-gray-100 justify-between">
       <div className=" flex md:flex-col gap-2 ">
         {navMenu.map((elm) => (
           <div

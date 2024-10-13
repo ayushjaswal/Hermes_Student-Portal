@@ -1,24 +1,101 @@
 import AsideNav from "@/components/AppComponents/AsideNav";
-import React from "react";
+import { Button } from "@/components/ui/button";
+import { useRef, useState } from "react";
 import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import {
+  deleteObject,
+  getDownloadURL,
+  ref,
+  uploadBytesResumable,
+} from "firebase/storage";
+
+import { storage } from "@/firebase";
+import { toast, Toaster } from "sonner";
+import axios from "axios";
+import { config, path } from "@/path";
 
 const EditProfile = () => {
   const user = useSelector((state) => state.user);
+  const fileInputRef = useRef(null);
+  const [formData, setFormData] = useState({
+    avatar: user.avatar,
+    DOB: user.DOB,
+    ABCId: user.ABCId,
+  });
+  const navigate = useNavigate();
+  const handleProfileImageRemove = () => {};
+
+  const handleProfileImageEdit = async (event) => {
+    const file = event.target.files[0];
+    const fileName = Date.now() + "." + file.name.split(".").pop();
+    const imageRef = ref(storage, `profile/${fileName}`);
+    try {
+      await uploadBytesResumable(imageRef, file);
+      const url = await getDownloadURL(imageRef);
+      setFormData({ ...formData, avatar: url });
+      toast.success("Image uploaded successfully!");
+    } catch (err) {
+      console.log(err);
+      toast.error("Failed to upload image!");
+    }
+  };
+
+  const handleSaveEditedChanges = async () => {
+    try {
+      const res = await axios.post(
+        `${path}/auth/edit-profile`,
+        formData,
+        config
+      );
+      if (res) {
+        toast.success("Profile edited successfully!");
+        navigate("/profile");
+      } else {
+        toast.error("Failed to edit profile!");
+      }
+    } catch (error) {
+      console.log(error);
+      toast.error("Failed to edit profile!");
+    }
+  };
 
   return (
-    <div className="md:flex">
+    <div className="md:flex h-[100vh]">
       <AsideNav />
-      <section className="mx-4 my-4 flex flex-col gap-4">
+      <Toaster richColors position="bottom-right" />
+      <section className="mx-4 pb-4 flex flex-col gap-4 h-[100vh] overflow-y-scroll">
         <div className="title w-full">Edit Profile</div>
         <div className="text-[12px]">*Cannot edit verified values</div>
         <div className="flex flex-col gap-4">
-          <div>
-            Profile Picture:
+          <div className="flex gap-2">
             <img
-              src={user.avatar}
+              src={formData.avatar}
               alt="Profile Avatar"
-              className="w-[10rem] h-[10rem] object-cover rounded-full border"
+              className="w-[10rem] h-[10rem] object-cover border"
             />
+            <Button
+              onClick={() => fileInputRef.current.click()}
+              className="btn"
+            > 
+              update
+              <input
+                type="file"
+                ref={fileInputRef}
+                accept="image/*"
+                onChange={handleProfileImageEdit}
+                style={{ display: "none" }}
+              />
+            </Button>
+            {user.avatar && (
+              <Button
+                onClick={handleProfileImageRemove}
+                variant={"destructive"}
+                className="btn"
+              >
+                Remove
+              </Button>
+            )}
           </div>
           <div className="flex items-center gap-2">
             <label className="label">Name:</label>
@@ -49,33 +126,66 @@ const EditProfile = () => {
             />
           </div>
           <div className="flex items-center gap-2">
+            <label className="label">Branch:</label>
+            <input
+              className="inp"
+              value={`${user.branchId.branchName}(${user.branchId.branchCode})`}
+              placeholder="Enrollment Number"
+              disabled
+            />
+          </div>
+          <div className="flex items-center gap-2">
             <label className="label">DOB:</label>
             <input
               type="date"
               className="inp"
-              value={user.DOB}
+              value={formData.DOB?.split("T")[0]}
+              onChange={(event) =>
+                setFormData((prev) => ({ ...prev, DOB: event.target.value }))
+              }
               placeholder="DOB"
-              disabled // Assuming DOB should not be editable
             />
           </div>
           <div className="flex items-center gap-2">
             <label className="label">ABCId:</label>
             <input
               className="inp"
-              value={user.ABCId}
+              value={formData.ABCId}
+              onChange={(event) =>
+                setFormData((prev) => ({ ...prev, ABCId: event.target.value }))
+              }
               placeholder="ABCID"
-              disabled // Assuming ABCId should not be editable
             />
           </div>
           <div className="flex items-center gap-2">
             <label className="label">Subjects:</label>
-            <input
-              className="inp"
-              value={user.subjects.join(", ")} // Displaying subjects as a comma-separated list
-              placeholder="Subjects"
-              disabled
-            />
+            <div className=" flex-1 ">
+              {user.subjects?.map((subject) => (
+                <input
+                  key={subject?.paperCode}
+                  className="inp mb-2 mr-2"
+                  value={subject.paperName}
+                  placeholder="Subjects"
+                  disabled
+                />
+              ))}
+            </div>
           </div>
+        </div>
+        <div className="flex gap-2">
+          <Button
+            onClick={handleSaveEditedChanges}
+            variant="primary"
+            className="btn md:w-full"
+          >
+            Save Changes
+          </Button>
+          <Button
+            onClick={() => navigate("/profile")}
+            className="btn md:w-full"
+          >
+            Cancel
+          </Button>
         </div>
       </section>
     </div>

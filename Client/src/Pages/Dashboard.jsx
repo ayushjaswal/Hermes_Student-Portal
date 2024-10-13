@@ -1,28 +1,11 @@
 import AsideNav from "@/components/AppComponents/AsideNav";
 import Card from "@/components/AppComponents/Card";
-import { config, path } from "@/path";
-import { addSubject } from "@/store/features/subjects";
-import axios from "axios";
-import { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 
 const Dashboard = () => {
   const navigate = useNavigate();
-  const subjects = useSelector((state) => state.subjects);
-  const dispatch = useDispatch();
   const user = useSelector((state) => state.user);
-  useEffect(() => {
-    const fetchSubjects = async () => {
-      const subject = await axios.get(
-        `${path}/class/get-subjects-info`,
-        config
-      );
-      console.log(subject.data)
-      dispatch(addSubject(subject.data));
-    };
-    fetchSubjects();
-  }, []);
 
   return (
     <div className="md:flex ">
@@ -55,7 +38,7 @@ const Dashboard = () => {
         </div>
         <div className="">
           <div className="flex flex-col md:flex-row gap-2 w-full">
-            {subjects?.map((subject) => (
+            {user.subjects?.map((subject) => (
               <div key={subject?.paperCode}>
                 <Card props={subject} />
               </div>

@@ -1,5 +1,4 @@
 import AsideNav from "@/components/AppComponents/AsideNav";
-import Card from "@/components/AppComponents/Card";
 import { config, path } from "@/path";
 import axios from "axios";
 import { useEffect, useState } from "react";
@@ -9,6 +8,8 @@ import { toast, Toaster } from "sonner";
 const CoursesPage = () => {
   const { courseId } = useParams();
   const [course, setCourse] = useState();
+  const navigate = useNavigate();
+
   useEffect(() => {
     const fetchCourse = async () => {
       try {
