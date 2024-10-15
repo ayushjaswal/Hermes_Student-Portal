@@ -11,6 +11,7 @@ import classIcon from "../../assets/class.svg";
 import courseIcon from "../../assets/course.svg";
 import profileIcon from "../../assets/profile.svg";
 import assignmentIcon from "../../assets/assignment.svg";
+import forumIcon from "../../assets/forum.svg";
 
 const AsideNav = () => {
   const dispatch = useDispatch();
@@ -29,6 +30,11 @@ const AsideNav = () => {
       route: "Assignment",
       path: "/assignments",
     },
+    {
+      icon: forumIcon,
+      route: "Contact",
+      path: "/forum",
+    }
   ];
 
   const navigate = useNavigate();

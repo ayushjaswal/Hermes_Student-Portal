@@ -17,6 +17,7 @@ import Assignment from "./Pages/Assignments.jsx";
 import CoursePage from "./Pages/CoursePage.jsx";
 import EditProfile from "./Pages/EditProfile.jsx";
 import { Edit } from "lucide-react";
+import ForumPage from "./Pages/ForumPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -79,6 +80,14 @@ const router = createBrowserRouter([
       </ProtectedRoute>
     ),
   },
+  {
+  path: "/forum",
+  element: (
+    <ProtectedRoute>
+      <ForumPage />
+    </ProtectedRoute>
+  ),
+},
   {
     path: "/courses/:courseId",
     element: (
