@@ -15,7 +15,7 @@ const Dashboard = () => {
         <div className="text-3xl font-bold text-gray-900">Dashboard</div>
 
         {/* Profile Section */}
-        <div className="relative bg-white border border-gray-300 rounded-lg shadow-lg p-6">
+        <div className="relative bg-white border border-gray-300 rounded-lg shadow-sm p-6">
           <div className="flex flex-col md:flex-row items-center gap-4">
             <img
               className="h-32 w-32 rounded-full object-cover border border-gray-200 shadow-sm"
@@ -36,7 +36,7 @@ const Dashboard = () => {
           {/* Edit Button */}
           <div
             onClick={() => navigate("/profile/edit")}
-            className="absolute top-4 right-4 bg-blue-500 text-white px-4 py-2 rounded-lg cursor-pointer hover:bg-blue-600 transition duration-300 ease-in-out"
+            className="absolute top-0 right-0 mr-3 bg-gray-200 p-2 mt-2 rounded-md cursor-pointer hover:bg-gray-300 transition ease-in-out"
           >
             Edit
           </div>

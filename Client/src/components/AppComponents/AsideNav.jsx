@@ -12,6 +12,7 @@ import courseIcon from "../../assets/course.svg";
 import profileIcon from "../../assets/profile.svg";
 import assignmentIcon from "../../assets/assignment.svg";
 import forumIcon from "../../assets/forum.svg";
+import logout from "../../assets/logout.svg";
 
 const AsideNav = () => {
   const dispatch = useDispatch();
@@ -34,7 +35,7 @@ const AsideNav = () => {
       icon: forumIcon,
       route: "Contact",
       path: "/forum",
-    }
+    },
   ];
 
   const navigate = useNavigate();
@@ -52,8 +53,8 @@ const AsideNav = () => {
   };
 
   return (
-    <aside className="flex md:flex-col p-4 gap-2 md:h-[100vh] md:w-[12rem] bg-gray-100 justify-between">
-      <div className=" flex md:flex-col gap-2 ">
+    <aside className="flex md:flex-col p-4  gap-2 md:h-[100vh] md:w-[12rem] bg-gray-100 justify-between">
+      <div className=" flex md:flex-col gap-1 md:gap-2  ">
         {navMenu.map((elm) => (
           <div
             className={
@@ -67,7 +68,8 @@ const AsideNav = () => {
           >
             <img
               className={
-                "" + (!location.pathname.includes(elm.path) ? "  " : "invert ")
+                "size-[1rem] " +
+                (!location.pathname.includes(elm.path) ? "  " : "invert ")
               }
               src={elm.icon}
               alt={elm.route + "-icon"}
@@ -76,8 +78,11 @@ const AsideNav = () => {
           </div>
         ))}
       </div>
-      <Button onClick={handleLogout}>
-        {loginingOut ? <TailSpin height={16} color="white" /> : "Logout"}
+      <Button className="flex gap-2 items-center flex-shrink-0" onClick={handleLogout}>
+        <img className="size-[1rem]" src={logout} />
+        <div className="hidden md:block">
+          {loginingOut ? <TailSpin height={16} color="white" /> : "Logout"}
+        </div>
       </Button>
     </aside>
   );

@@ -72,7 +72,12 @@
 
   .nav-elm {
     @apply px-6 py-2 transition ease-in-out cursor-pointer hover:bg-blue-200 rounded-md;
+    flex-shrink: 0;
   }
+  /* .nav-elm img {
+    width: 32px; 
+    height: 32px;
+} */
   .active-nav-elm {
     @apply bg-gradient-to-r from-cyan-500 to-blue-500 text-white;
   }
