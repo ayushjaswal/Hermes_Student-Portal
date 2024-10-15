@@ -3,7 +3,6 @@ import Card from "@/components/AppComponents/Card";
 import { config, path } from "@/path";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 
 const Courses = () => {
@@ -21,19 +20,19 @@ const Courses = () => {
     };
     fetchSubjects();
   }, []);
+
   return (
-    <div className="md:flex ">
+    <div className="md:flex min-h-screen">
       <AsideNav />
-      <section className="px-5 py-4   flex flex-col gap-2  ">
-        <div className="title w-3/4">Courses</div>
-        <div className="">
-          <div className="flex flex-col md:flex-row gap-2 w-full">
-            {subjects.map((subject) => (
-              <div key={subject.paperCode}>
-                <Card props={subject} />
-              </div>
-            ))}
-          </div>
+      <section className="px-5 py-4 w-full flex flex-col gap-4">
+        <div className="title text-2xl font-bold mb-4">Courses</div>
+
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          {subjects.map((subject) => (
+            <div key={subject.paperCode}>
+              <Card props={subject} />
+            </div>
+          ))}
         </div>
       </section>
     </div>
