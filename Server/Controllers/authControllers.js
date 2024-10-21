@@ -145,7 +145,9 @@ export const tokenLogin = async (req, res) => {
         .findOne({ email })
         .populate(["branchId", "subjects"]);
     }
-    return res.status(200).json(result);
+    return res
+      .status(200)
+      .json(result);
   } catch (error) {
     console.log(error);
     return res.status(500).json(error);
@@ -166,9 +168,9 @@ export const editProfile = async (req, res) => {
   try {
     const { ABCId, DOB, avatar } = req.body;
     const { email } = jwtDecode(req.token);
-    console.log(email)
+    console.log(email);
     const userDb = await student.updateOne({ email }, { avatar, DOB, ABCId });
-    console.log(userDb)
+    console.log(userDb);
     if (userDb) {
       return res
         .status(200)

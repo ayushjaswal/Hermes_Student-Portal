@@ -10,7 +10,7 @@ const Dashboard = () => {
   return (
     <div className="md:flex min-h-screen bg-white">
       <AsideNav />
-      <section className="flex-1 mx-4 mt-6 flex flex-col gap-6">
+      <section className="flex-1 mx-4 py-6 flex flex-col gap-6">
         {/* Dashboard Title */}
         <div className="text-3xl font-bold text-gray-900">Dashboard</div>
 

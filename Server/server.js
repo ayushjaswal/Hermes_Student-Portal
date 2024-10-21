@@ -29,12 +29,15 @@ import authRoutes from "./Routes/authRoutes.js";
 import classRoutes from "./Routes/classRoutes.js";
 import connect from "./config/db.js";
 import cookieParser from "cookie-parser";
+import { Server } from "socket.io";
+import http from "http";
 import dataRoutes from "./Routes/dataRoutes.js";
+import messagesRoutes from "./Routes/messageRoutes.js";
 dotenv.config(); // for parsing env files
 
 const app = express();
 
-console.log(process.env.CLIENT)
+console.log(process.env.CLIENT);
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", process.env.CLIENT);
   res.header(
@@ -52,9 +55,7 @@ const corsOptions = {
 };
 app.use(cors(corsOptions));
 
-
 // CORS options
-
 
 // Middleware setup
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -65,14 +66,31 @@ app.use(express.json());
 // Connect to MongoDB
 connect();
 
-// API routes for APP
+const server = http.createServer(app);
+const io = new Server(server, { cors: { ...corsOptions } });
 
+
+app.use((req, res, next)=>{
+  req.io = io;
+})
+
+// API routes for APP
 app.use("/auth", authRoutes);
 app.use("/data", dataRoutes);
 app.use("/class", classRoutes);
+app.use("/messages", messagesRoutes)
 
+io.on("connection", (socket) => {
+  socket.on("message", (message) => {
+    
+    io.emit('roomMsg', message);
+  });
+  socket.on("disconnect", () => {
+    console.log("Client disconnected:", socket.id);
+  });
+});
 // Starting the server on port 8080
 const PORT = 8080;
-app.listen(PORT, () => {
+server.listen(PORT, () => {
   console.log(`Server is up and running on port ${PORT}`);
 });

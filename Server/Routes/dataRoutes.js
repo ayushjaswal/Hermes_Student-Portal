@@ -8,6 +8,7 @@ import {
   getSubjectData,
   inserSingleStudent,
   inserSingleFaculty,
+  insertBranch
 } from "../Controllers/dataControllers.js";
 
 const router = express.Router();
@@ -20,5 +21,6 @@ router.get("/", getData);
 router.get("/subjects", getSubjectData);
 router.post("/create-student", inserSingleStudent);
 router.post("/create-faculty", inserSingleFaculty);
+router.post("/create-branch", insertBranch)
 
 export default router;

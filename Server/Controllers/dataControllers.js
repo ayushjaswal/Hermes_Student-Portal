@@ -5,6 +5,7 @@ import subject from "../Models/Subject.model.js";
 import branch from "../Models/Branch.model.js";
 import user from "../Models/User.model.js";
 import fs from "fs";
+import classroom from "../Models/Classroom.model.js";
 
 // Function to insert student data from JSON
 export const insertStudents = async (req, res) => {
@@ -60,7 +61,7 @@ export const inserSingleStudent = async (req, res) => {
     let subjectArray = [];
     console.log(subjects);
     for (let i = 0; i < subjects?.length; i++) {
-      const normalizedCode = subjects[i].replace(/[\u2010]/g, '‐');
+      const normalizedCode = subjects[i].replace(/[\u2010]/g, "‐");
       const subjectDb = await subject.findOne({
         paperCode: normalizedCode,
       });
@@ -90,10 +91,10 @@ export const inserSingleFaculty = async (req, res) => {
     const newFaculty = await faculty.create({
       email,
       name,
-      avatar
+      avatar,
     });
     for (let i = 0; i < subjects?.length; i++) {
-      const normalizedCode = subjects[i].replace(/[\u2010]/g, '‐');
+      const normalizedCode = subjects[i].replace(/[\u2010]/g, "‐");
       const subjectDb = await subject.findOne({
         paperCode: normalizedCode,
       });
@@ -154,5 +155,28 @@ export const getSubjectData = (req, res) => {
   } catch (error) {
     console.error(error);
     return res.status(500).json({ error: "Error getting subject data" });
+  }
+};
+
+export const insertBranch = async (req, res) => {
+  try {
+    const { branchName, branchCode, year } = req.body;
+    const newBranch = await branch.create({ branchName, branchCode, year });
+    if (newBranch) {
+      const classroomId = branchName + "-" + year;
+      const newRoom = await classroom.create({ classroomId });
+      if (newRoom) {
+        newBranch.classroom = newRoom._id;
+        await newBranch.save();
+      }
+      return res
+        .status(200)
+        .json({ message: "Branch and Classroom created successfully" });
+    } else {
+      return res.status(400).json({ message: "Error creating branch!" });
+    }
+  } catch (error) {
+    console.error(error.message);
+    return res.status(500).json({ error: "Error inserting branch data" });
   }
 };

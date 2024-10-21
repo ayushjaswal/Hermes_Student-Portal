@@ -9,6 +9,7 @@ const initialState = {
   name:"",
   subjects: [],
   branchId: {},
+  classroom: "",
   _id: "",
 };
 
@@ -26,6 +27,7 @@ export const userSlice = createSlice({
       state.branchId = action.payload.branchId;
       state._id = action.payload._id;
       state.subjects = action.payload.subjects;
+      state.classroom = action.payload.classroom;
     },
     removeUser: (state) => {
       state.email = "";

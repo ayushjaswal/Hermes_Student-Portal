@@ -32,7 +32,7 @@ const CoursesPage = () => {
   return (
     <div className="md:flex ">
       <AsideNav />
-      <section className="px-5 py-4 flex flex-col gap-2  w-full">
+      <section className="flex-1 mx-4 py-6 flex flex-col gap-6 overflow-y-scroll">
         <Toaster richColors position="bottom-right" closeButton />
         <div className="flex flex-col gap-2">
           <div className="flex w-full justify-between text-xl">

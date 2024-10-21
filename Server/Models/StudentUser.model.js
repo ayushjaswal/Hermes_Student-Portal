@@ -13,6 +13,7 @@ const studentUserSchema = new Schema(
     subjects: [
       { type: mongoose.Types.ObjectId, required: true, ref: "subject" },
     ],
+    classroom: { type: mongoose.Types.ObjectId, ref: "classroom" },
   },
   { timestamps: true }
 );

@@ -64,7 +64,7 @@ const EditProfile = () => {
     <div className="md:flex h-[100vh]">
       <AsideNav />
       <Toaster richColors position="bottom-right" />
-      <section className="mx-4 pb-4 flex flex-col gap-4 h-[100vh] overflow-y-scroll">
+      <section className="flex-1 mx-4 py-6 flex flex-col gap-6 md:overflow-y-scroll">
         <div className="title w-full">Edit Profile</div>
         <div className="text-[12px]">*Cannot edit verified values</div>
         <div className="flex flex-col gap-4">
@@ -172,7 +172,7 @@ const EditProfile = () => {
             </div>
           </div>
         </div>
-        <div className="flex gap-2">
+        <div className="flex md:flex-row flex-col gap-2">
           <Button
             onClick={handleSaveEditedChanges}
             variant="primary"

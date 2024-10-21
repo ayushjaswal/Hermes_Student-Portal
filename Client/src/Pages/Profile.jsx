@@ -10,7 +10,7 @@ const Profile = () => {
   return (
     <div className="md:flex  h-[100vh]">
       <AsideNav />
-      <section className="mx-4 pb-4 flex flex-col gap-4 h-[100vh] overflow-y-scroll">
+      <section className="flex-1 mx-4 py-6 flex flex-col gap-6 overflow-y-scroll">
         <div className="title w-full">Profile</div>
         <div className="flex flex-col gap-4">
           <div className="flex gap-2">
