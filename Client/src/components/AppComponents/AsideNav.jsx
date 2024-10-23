@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import { removeUser } from "@/store/features/user";
 import axios from "axios";
 import { config, path } from "@/path";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { TailSpin } from "react-loader-spinner";
 import dashboardIcon from "../../assets/dashboard.svg";
 import classIcon from "../../assets/class.svg";
@@ -51,6 +51,10 @@ const AsideNav = () => {
     dispatch(removeUser());
     setLoginginOut(false);
   };
+
+  useEffect(()=> {
+    
+  })
 
   return (
     <aside className="flex md:flex-col p-4  gap-2 md:h-[100vh] md:w-[12rem] bg-gray-100 justify-between">

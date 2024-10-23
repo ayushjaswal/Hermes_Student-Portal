@@ -33,6 +33,7 @@ import { Server } from "socket.io";
 import http from "http";
 import dataRoutes from "./Routes/dataRoutes.js";
 import messagesRoutes from "./Routes/messageRoutes.js";
+import { sendRoomMessage } from "./Controllers/messageControllers.js";
 dotenv.config(); // for parsing env files
 
 const app = express();
@@ -69,22 +70,42 @@ connect();
 const server = http.createServer(app);
 const io = new Server(server, { cors: { ...corsOptions } });
 
-
-app.use((req, res, next)=>{
-  req.io = io;
-})
-
 // API routes for APP
 app.use("/auth", authRoutes);
 app.use("/data", dataRoutes);
 app.use("/class", classRoutes);
-app.use("/messages", messagesRoutes)
+// app.use("/messages", messagesRoutes)
 
+// Socket.io setup and related Instances
+
+const userSockets = {};
 io.on("connection", (socket) => {
-  socket.on("message", (message) => {
-    
-    io.emit('roomMsg', message);
+  //For joining room
+  socket.on("joinRoom", ({ roomId, socketId, id }) => {
+    socket.join(roomId);
+    userSockets[id] = socketId;
   });
+
+  //for message related instance
+  socket.on("message", (message) => {
+    console.log("New message:", message);
+    io.to(message.roomId).emit("roomMsg", {
+      message: message.message,
+      sender: { email: message.senderEmail },
+    });
+    sendRoomMessage(message);
+  });
+
+  //for notification related instance
+  socket.on("notification", (notification) => {
+    const user = userSockets[notification.userId];
+    if (user) {
+      io.to(user).emit("notification", notification);
+    } else {
+      console.log("User not found:", notification.userId);
+    }
+  });
+  //for disconnecting from room
   socket.on("disconnect", () => {
     console.log("Client disconnected:", socket.id);
   });

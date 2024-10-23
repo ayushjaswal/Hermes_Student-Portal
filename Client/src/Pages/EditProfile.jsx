@@ -69,16 +69,23 @@ const EditProfile = () => {
         <div className="text-[12px]">*Cannot edit verified values</div>
         <div className="flex flex-col gap-4">
           <div className="flex gap-2">
-            <img
-              src={formData.avatar}
-              alt="Profile Avatar"
-              className="w-[10rem] h-[10rem] object-cover border"
-            />
+            {formData.avatar ? (
+              <img
+                src={user.avatar}
+                alt="Profile Avatar"
+                className="w-[10rem] h-[10rem] object-cover border"
+              />
+            ) : (
+              <div className="w-[10rem] h-[10rem] object-cover border text-center flex flex-col justify-center bg-gray-300">
+                {" "}
+                No image
+              </div>
+            )}
             <Button
               onClick={() => fileInputRef.current.click()}
               className="btn"
-            > 
-              update
+            >
+              { user.avatar ? "Update" : "Add"}
               <input
                 type="file"
                 ref={fileInputRef}

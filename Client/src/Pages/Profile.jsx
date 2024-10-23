@@ -14,11 +14,18 @@ const Profile = () => {
         <div className="title w-full">Profile</div>
         <div className="flex flex-col gap-4">
           <div className="flex gap-2">
-            <img
-              src={user.avatar}
-              alt="Profile Avatar"
-              className="w-[10rem] h-[10rem] object-cover border"
-            />
+            {user.avatar ? (
+              <img
+                src={user.avatar}
+                alt="Profile Avatar"
+                className="w-[10rem] h-[10rem] object-cover border"
+              />
+            ) : (
+              <div className="w-[10rem] h-[10rem] object-cover border text-center flex flex-col justify-center bg-gray-300">
+                {" "}
+                No image
+              </div>
+            )}
           </div>
           <div className="flex items-center gap-2">
             <label className="label">Name:</label>
@@ -95,12 +102,12 @@ const Profile = () => {
           <Button
             variant="primary"
             className="btn md:w-full"
-            onClick={()=> navigate("/profile/edit")}
+            onClick={() => navigate("/profile/edit")}
           >
             Edit Profile
           </Button>
           <Button
-            onClick={()=> navigate("/forum")}
+            onClick={() => navigate("/forum")}
             variant="primary"
             className="btn md:w-full"
           >

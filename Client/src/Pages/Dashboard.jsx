@@ -17,11 +17,17 @@ const Dashboard = () => {
         {/* Profile Section */}
         <div className="relative bg-white border border-gray-300 rounded-lg shadow-sm p-6">
           <div className="flex flex-col md:flex-row items-center gap-4">
-            <img
-              className="h-32 w-32 rounded-full object-cover border border-gray-200 shadow-sm"
-              src={user.avatar}
-              alt="User Avatar"
-            />
+            {user.avatar ? (
+              <img
+                className="h-32 w-32 rounded-full object-cover border border-gray-200 shadow-sm"
+                src={user.avatar}
+                alt="User Avatar"
+              />
+            ) : (
+                <div className="w-32 h-32 text-center flex flex-col items-center justify-center text-[4rem] rounded-full border border-gray-200 shadow-sm bg-red-300">
+                  {user.name[0]}
+                </div>
+              )}
             <div className="flex flex-col gap-2">
               <div className="text-2xl font-semibold text-gray-800">{user.name}</div>
               <div>
