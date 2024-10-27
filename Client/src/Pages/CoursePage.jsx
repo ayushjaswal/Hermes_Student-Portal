@@ -34,24 +34,8 @@ const CoursesPage = () => {
       <AsideNav />
       <section className="flex-1 mx-4 py-6 flex flex-col gap-6 overflow-y-scroll">
         <Toaster richColors position="bottom-right" closeButton />
-        <div className="flex flex-col gap-2">
-          <div className="flex w-full justify-between text-xl">
-            <div className="title">{course?.paperName}</div>
-            <div>{course?.paperCode}</div>
-          </div>
-          <div className="flex gap-2 ">
-            Resources:
-            <a className="link" href="https://syllabusx.live/" target="_blank">
-              Syllabusx
-            </a>
-            <a
-              className="link"
-              href="https://www.youtube.com/@GateSmashers"
-              target="_blank"
-            >
-              Gate Smashers
-            </a>
-          </div>
+        <div>
+          INFORMATION REGARDING COURSE
         </div>
         <div>Taught By:</div>
         <div className="flex gap-4">

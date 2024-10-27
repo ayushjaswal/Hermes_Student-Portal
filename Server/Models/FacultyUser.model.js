@@ -8,7 +8,7 @@ const facultyUserModel = new Schema(
     DOB: { type: Date, unique: true },
     phoneNumber: { type: String, unique: true },
     subjects: [{ type: mongoose.Types.ObjectId, ref: "subject" }],
-    classroom: { type: mongoose.Types.ObjectId, ref: "classroom" },
+    classroom: [{ type: mongoose.Types.ObjectId, ref: "classroom" }],
   },
   { timestamps: true }
 );

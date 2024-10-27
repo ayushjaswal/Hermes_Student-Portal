@@ -3,10 +3,8 @@ import Card from "@/components/AppComponents/Card";
 import { config, path } from "@/path";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
 
 const Courses = () => {
-  const navigate = useNavigate();
   const [subjects, setSubjects] = useState([]);
 
   useEffect(() => {

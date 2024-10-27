@@ -9,6 +9,7 @@ const subjectSchema = new Schema(
     ],
     credits: { type: Number, required: true },
     semester: { type: Number, required: true },
+    assignments: [{type: mongoose.Types.ObjectId, ref: "assignment"  }],
   },
   { timestamps: true }
 );

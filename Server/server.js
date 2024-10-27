@@ -32,6 +32,7 @@ import cookieParser from "cookie-parser";
 import { Server } from "socket.io";
 import http from "http";
 import dataRoutes from "./Routes/dataRoutes.js";
+import assignmentRoutes from "./Routes/AssignmentRoutes.js";
 import messagesRoutes from "./Routes/messageRoutes.js";
 import { sendRoomMessage } from "./Controllers/messageControllers.js";
 dotenv.config(); // for parsing env files
@@ -74,6 +75,7 @@ const io = new Server(server, { cors: { ...corsOptions } });
 app.use("/auth", authRoutes);
 app.use("/data", dataRoutes);
 app.use("/class", classRoutes);
+app.use("/assignment", assignmentRoutes);
 // app.use("/messages", messagesRoutes)
 
 // Socket.io setup and related Instances

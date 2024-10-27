@@ -9,6 +9,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import Typical from "react-typical";
 import { TailSpin } from "react-loader-spinner";
 import { toast, Toaster } from "sonner";
+import { addFaculty } from "@/store/features/faculty";
 
 const Login = () => {
   const [loginData, setLoginData] = useState({
@@ -20,6 +21,7 @@ const Login = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const user = useSelector((state) => state.user);
+  const faculty = useSelector((state) => state.faculty);
   const [loginingIn, setLoginingIn] = useState(false);
 
   const handleLogin = async (e) => {
@@ -32,9 +34,12 @@ const Login = () => {
       if (result.data.firstTimer) {
         navigate("/change-password", { state: { email: loginData.email } });
       } else {
-        dispatch(addUser(result.data));
+        if (result.data.isFaculty) {
+          dispatch(addFaculty(result.data.facultyData));
+        } else {
+          dispatch(addUser(result.data));
+        }
       }
-      console.log(result)
       if (result.data.error) {
         toast.error(result.error);
       }
@@ -45,15 +50,14 @@ const Login = () => {
     }
   };
   useEffect(() => {
-    if (user.email) {
-      console.log(location);
+    if (user.email || faculty.email) {
       if (location.state?.from.pathname) {
         navigate(`${location.state?.from.pathname}`);
       } else {
-        navigate("/dashboard");
+        user.email ? navigate("/dashboard") : navigate("/faculty-classroom");
       }
     }
-  }, [navigate, user, location.state]);
+  }, [navigate, user, location.state, faculty]);
   return (
     <div className="flex">
       <Toaster richColors position="bottom-right" />
@@ -100,7 +104,7 @@ const Login = () => {
           </Button>
         </form>
       </div>
-      <div className="grad w-full h-[100vh] flex text-center items-center justify-center text-white text-[4rem] font-extrabold">
+      <div className="hidden grad w-full h-[100vh] md:flex text-center items-center justify-center text-white text-[4rem] font-extrabold">
         <Typical
           steps={["Student Portal", 5000, "Login", 5000]}
           loop={Infinity}

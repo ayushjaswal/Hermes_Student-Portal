@@ -79,8 +79,8 @@ export const loginUser = async (req, res) => {
           if (isFaculty) {
             // Stimulate fetching data of faculty from StudentUser.model
             const facultyData = await faculty.findOne({ email });
-            console.log({ email });
-            return res.status(200).json(facultyData);
+            console.log(facultyData);
+            return res.status(200).json({ isFaculty: true, facultyData });
           } else {
             // Stimulate fetching data of faculty from StudentUser.model
 
@@ -130,7 +130,7 @@ export const changePassword = async (req, res) => {
 export const tokenLogin = async (req, res) => {
   const { token } = req;
   try {
-    let email, isFaculty, result;
+    let email, isFaculty;
     jwt.verify(token, jwtPrivateKey, (err, data) => {
       if (err) {
         return res.status(400).json({ error: "Authorization Failed" });
@@ -139,15 +139,17 @@ export const tokenLogin = async (req, res) => {
       isFaculty = data.isFaculty;
     });
     if (isFaculty) {
-      result = await faculty.findOne({ email });
+      const facultyData = await faculty
+        .findOne({ email })
+        .populate(["classroom", "subjects"]);
+      console.log(facultyData)
+      return res.status(200).json({ isFaculty: true, facultyData});
     } else {
-      result = await student
+      const result = await student
         .findOne({ email })
         .populate(["branchId", "subjects"]);
+      return res.status(200).json(result);
     }
-    return res
-      .status(200)
-      .json(result);
   } catch (error) {
     console.log(error);
     return res.status(500).json(error);

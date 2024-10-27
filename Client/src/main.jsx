@@ -17,6 +17,13 @@ import Assignment from "./Pages/Assignments.jsx";
 import CoursePage from "./Pages/CoursePage.jsx";
 import EditProfile from "./Pages/EditProfile.jsx";
 import ForumPage from "./Pages/ForumPage.jsx";
+import FacultyClassroom from "./Pages/FacultyClassroom.jsx";
+import FacultyClassrooms from "./Pages/FacultyClassrooms.jsx";
+import FacultyProfile from "./Pages/FacultyProfile.jsx";
+import FacultyProfileEdit from "./Pages/FacultyProfileEdit.jsx";
+import FacultyAssignments from "./Pages/FacultyAssignments.jsx";
+import FacultyContact from "./Pages/FacultyContact.jsx";
+import FacultyAssignmentSubmission from "./Pages/FacultyAssignmentSubmission.jsx";
 
 const router = createBrowserRouter([
   {
@@ -80,18 +87,74 @@ const router = createBrowserRouter([
     ),
   },
   {
-  path: "/forum",
-  element: (
-    <ProtectedRoute>
-      <ForumPage />
-    </ProtectedRoute>
-  ),
-},
+    path: "/forum",
+    element: (
+      <ProtectedRoute>
+        <ForumPage />
+      </ProtectedRoute>
+    ),
+  },
   {
     path: "/courses/:courseId",
     element: (
       <ProtectedRoute>
         <CoursePage />
+      </ProtectedRoute>
+    ),
+  },
+  {
+    path: "/faculty-classroom",
+    element: (
+      <ProtectedRoute>
+        <FacultyClassrooms />
+      </ProtectedRoute>
+    ),
+  },
+  {
+    path: "/faculty-classroom/:classroomId",
+    element: (
+      <ProtectedRoute>
+        <FacultyClassroom />
+      </ProtectedRoute>
+    ),
+  },
+  {
+    path: "/faculty-profile",
+    element: (
+      <ProtectedRoute>
+        <FacultyProfile />
+      </ProtectedRoute>
+    ),
+  },
+  {
+    path: "/faculty-profile/edit",
+    element: (
+      <ProtectedRoute>
+        <FacultyProfileEdit />
+      </ProtectedRoute>
+    ),
+  },
+  {
+    path: "/faculty-assignments",
+    element: (
+      <ProtectedRoute>
+        <FacultyAssignments />
+      </ProtectedRoute>
+    ),
+  },
+  {
+    path: "/forum-messages",
+    element: (
+      <ProtectedRoute>
+        <FacultyContact />
+      </ProtectedRoute>
+    ),
+  },
+  {
+    path: "/faculty-assignments-submissions/:assignmentId",
+    element: (
+      <ProtectedRoute>
+        <FacultyAssignmentSubmission />
       </ProtectedRoute>
     ),
   },
