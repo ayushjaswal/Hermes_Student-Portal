@@ -1,6 +1,6 @@
 import AsideNav from "@/components/AppComponents/AsideNav";
 import { config, path } from "@/path";
-import { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import socketService from "@/lib/socketService";
 import { Button } from "@/components/ui/button";
 import sendIcon from "../assets/send.svg";
@@ -89,39 +89,77 @@ const FacultyClassroom = () => {
 
         <div className="flex flex-col items-end w-full border md:h-[85vh] p-2 rounded-md">
           <div className="w-full h-[68vh] md:h-[80vh] overflow-y-scroll p-[1rem]">
-            {messages?.map((message, index) => (
-              <div
-                className={`flex w-full ${
-                  message?.sender?.email === faculty.email
-                    ? "justify-end"
-                    : "justify-start"
-                }`}
-                key={index}
-              >
-                <div className={`mt-2 relative`} style={{ maxWidth: "50rem" }}>
+            {messages?.map((message, index) => {
+              const messageDate = new Date(
+                message.createdAt
+              ).toLocaleDateString();
+              const prevMessageDate =
+                index > 0
+                  ? new Date(messages[index - 1].createdAt).toLocaleDateString()
+                  : null;
+
+              const messageTime = new Date(
+                message.createdAt
+              ).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+              return (
+                <React.Fragment key={index}>
+                  {/* Date label with auto-scaling width, rounded edges, and light blue background */}
+                  {messageDate !== prevMessageDate && (
+                    <div className="text-center w-full text-xs text-gray-500 mb-2 px-3 py-1 ">
+                      <div className="inline-block bg-blue-100 rounded-full px-3 py-1">
+                        {messageDate}
+                      </div>
+                    </div>
+                  )}
+
                   <div
-                    className={`border-gray-300 border text-wrap p-[1rem] rounded-md ${
+                    className={`flex w-full ${
                       message?.sender?.email === faculty.email
-                        ? "active-nav-elm text-white"
-                        : "border-1"
+                        ? "justify-end"
+                        : "justify-start"
                     }`}
                   >
                     <div
-                      className={`text-[10px] ${
-                        message?.sender?.email === faculty.email
-                          ? " text-right "
-                          : " text-left "
-                      }`}
+                      className="mt-2 relative"
+                      style={{ maxWidth: "50rem" }}
                     >
-                      {message?.sender.email.split("@")[0]}
+                      <div
+                        className={`border-gray-300 border text-wrap p-[1rem] rounded-md ${
+                          message?.sender?.email === faculty.email
+                            ? "active-nav-elm text-white"
+                            : "border-1"
+                        }`}
+                      >
+                        <div
+                          className={`text-[10px] ${
+                            message?.sender?.email === faculty.email
+                              ? "text-right"
+                              : "text-left"
+                          }`}
+                        >
+                          {message?.sender.email.split("@")[0]}
+                        </div>
+                        {message.message}
+                        <div
+                          className={`text-[10px] ${
+                            message.sender.email === faculty.email
+                              ? " text-right "
+                              : " text-left "
+                          }
+                          `}
+                        >
+                          {messageTime}
+                        </div>
+                      </div>
                     </div>
-                    {message.message}
                   </div>
-                </div>
-              </div>
-            ))}
+                </React.Fragment>
+              );
+            })}
             <div ref={endOfMessagesRef} />
           </div>
+          {/* </div> */}
+
           <div className="flex gap-2 items-center w-full  px-3 py-2">
             <textarea
               ref={textareaRef}

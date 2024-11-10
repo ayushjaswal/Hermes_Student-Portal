@@ -24,6 +24,7 @@ import FacultyProfileEdit from "./Pages/FacultyProfileEdit.jsx";
 import FacultyAssignments from "./Pages/FacultyAssignments.jsx";
 import FacultyContact from "./Pages/FacultyContact.jsx";
 import FacultyAssignmentSubmission from "./Pages/FacultyAssignmentSubmission.jsx";
+import AssignmentPage from "./Pages/AssignmentPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -155,6 +156,14 @@ const router = createBrowserRouter([
     element: (
       <ProtectedRoute>
         <FacultyAssignmentSubmission />
+      </ProtectedRoute>
+    ),
+  },
+  {
+    path: "/assignments/:assignmentId",
+    element: (
+      <ProtectedRoute>
+        <AssignmentPage />
       </ProtectedRoute>
     ),
   },

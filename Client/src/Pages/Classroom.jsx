@@ -8,7 +8,7 @@ import { useDispatch, useSelector } from "react-redux";
 import axios from "axios";
 import { addClassroom } from "@/store/features/classroom";
 import { toast, Toaster } from "sonner";
-
+import React from "react";
 const Classroom = () => {
   const dispatch = useDispatch();
   const user = useSelector((state) => state.user);
@@ -88,39 +88,80 @@ const Classroom = () => {
 
         <div className="flex flex-col items-end w-full border md:h-[85vh] p-2 rounded-md">
           <div className="w-full h-[68vh] md:h-[80vh] overflow-y-scroll p-[1rem]">
-            {messages.map((message, index) => (
-              <div
-                className={`flex w-full ${
-                  message?.sender?.email === user.email
-                    ? "justify-end"
-                    : "justify-start"
-                }`}
-                key={index}
-              >
-                <div className={`mt-2 relative`} style={{ maxWidth: "50rem" }}>
+            {messages.map((message, index) => {
+              // Get the message date
+              const messageDate = new Date(
+                message.createdAt
+              ).toLocaleDateString();
+              // Get the previous message date if it exists
+              const prevMessageDate =
+                index > 0
+                  ? new Date(messages[index - 1].createdAt).toLocaleDateString()
+                  : null;
+
+              const messageTime = new Date(
+                message.createdAt
+              ).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+              console.log(messageTime);
+              return (
+                <React.Fragment key={index}>
+                  {messageDate !== prevMessageDate && (
+                    <div className="text-center w-full text-xs text-gray-500 mb-2 px-3 py-1 ">
+                      <div className="inline-block bg-blue-100 rounded-full px-3 py-1 shadow-sm ">
+                        {messageDate}
+                      </div>
+                    </div>
+                  )}
+
                   <div
-                    className={`border-gray-300 border text-wrap p-[1rem] rounded-md ${
+                    className={`flex w-full  ${
                       message?.sender?.email === user.email
-                        ? "active-nav-elm text-white"
-                        : "border-1"
+                        ? "justify-end"
+                        : "justify-start"
                     }`}
                   >
                     <div
-                      className={`text-[10px] ${
-                        message?.sender?.email === user.email
-                          ? " text-right "
-                          : " text-left "
-                      }`}
+                      className="mt-2 relative"
+                      style={{ maxWidth: "50rem" }}
                     >
-                      {message?.sender.email.split("@")[0]}
+                      <div
+                        className={`border-gray-300 border text-wrap  rounded-md  ${
+                          message?.sender?.email === user.email
+                            ? "active-nav-elm text-white"
+                            : "border-1"
+                        }`}
+                      >
+                        <div
+                          className={`text-[10px] rounded-t-md px-2 py-1 ${
+                            message?.sender?.email === user.email
+                              ? "text-right bg-gradient-to-r from-sky-500 to-blue-500 "
+                              : "text-left bg-gray-200"
+                          }`}
+                        >
+                          {message?.sender.email?.split("@")[0]}
+                        </div>
+                        <div className="pt-2 px-2">
+                        {message.message}
+                        </div>
+                        <div
+                          className={`text-[10px] p-2 ${
+                            message.sender.email === user.email
+                              ? " text-right "
+                              : " text-left "
+                          }
+                          `}
+                        >
+                          {messageTime}
+                        </div>
+                      </div>
                     </div>
-                    {message.message}
                   </div>
-                </div>
-              </div>
-            ))}
+                </React.Fragment>
+              );
+            })}
             <div ref={endOfMessagesRef} />
           </div>
+
           <div className="flex gap-2 items-center w-full  px-3 py-2">
             <textarea
               ref={textareaRef}

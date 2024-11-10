@@ -9,6 +9,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import { Input } from "@/components/ui/input";
 import {
   Select,
   SelectContent,
@@ -16,12 +17,15 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { storage } from "@/firebase";
 import { config, path } from "@/path";
 import axios from "axios";
+import { getDownloadURL, ref, uploadBytesResumable } from "firebase/storage";
 import { useEffect, useRef, useState } from "react";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { toast, Toaster } from "sonner";
+import { Progress } from "@/components/ui/progress"; // Adjust the path as necessary
 
 const FacultyAssignments = () => {
   const faculty = useSelector((state) => state.faculty);
@@ -30,6 +34,9 @@ const FacultyAssignments = () => {
   const [subject, setSubject] = useState("");
   const [classroomId, setClassroomId] = useState("");
   const [assignments, setAssignments] = useState([]);
+  const [attachment, setAttachment] = useState("");
+  const [description, setDescription] = useState("");
+  const [uploadProgress, setUploadProgress] = useState(null);
   const navigate = useNavigate();
   const closeBox = useRef(null);
 
@@ -48,6 +55,41 @@ const FacultyAssignments = () => {
     fetchAssignments();
   }, []);
 
+  const handleAssignment = async (event) => {
+    const file = event.target.files[0];
+    if (!file) return;
+
+    const fileName = Date.now() + "." + file.name.split(".").pop();
+    const assignmentRef = ref(storage, `assignments/${fileName}`);
+
+    try {
+      const uploadTask = uploadBytesResumable(assignmentRef, file);
+
+      uploadTask.on(
+        "state_changed",
+        (snapshot) => {
+          const progress =
+            (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+          setUploadProgress(progress); // Update progress state
+        },
+        (error) => {
+          console.error("Upload error:", error);
+          toast.error("Failed to upload file!");
+          setUploadProgress(0); // Reset progress on error
+        },
+        async () => {
+          const url = await getDownloadURL(uploadTask.snapshot.ref);
+          setAttachment(url);
+          toast.success("File uploaded successfully!");
+          setUploadProgress(0); // Reset progress on success
+        }
+      );
+    } catch (err) {
+      console.log(err);
+      toast.error("Failed to upload file!");
+    }
+  };
+
   const createAssignment = async (e) => {
     e.preventDefault();
 
@@ -63,6 +105,16 @@ const FacultyAssignments = () => {
       return;
     }
 
+    console.log({
+      name: title,
+      subjectId: subject,
+      dueDate: date,
+      classroomId,
+      assignedTeacher: faculty._id,
+      attachment,
+      description,
+    });
+
     const newAssignment = await axios.post(
       `${path}/assignment/create-assignment`,
       {
@@ -71,6 +123,8 @@ const FacultyAssignments = () => {
         dueDate: date,
         classroomId,
         assignedTeacher: faculty._id,
+        attachment,
+        description,
       },
       config
     );
@@ -99,7 +153,7 @@ const FacultyAssignments = () => {
                 Create assignment
               </Button>
             </DialogTrigger>
-            <DialogContent>
+            <DialogContent className="h-[80vh] overflow-y-scroll">
               <DialogHeader>
                 <DialogTitle>Create an Assignment</DialogTitle>
                 <form
@@ -116,6 +170,18 @@ const FacultyAssignments = () => {
                       id="title"
                       placeholder="title"
                       className="border px-2 py-1 rounded-md shadow-sm outline-none focus:ring-blue-400 focus:ring-2 focus:ring-primary"
+                    />
+                  </div>
+                  <div className="flex flex-col ">
+                    <label htmlFor="description" className="">
+                      Description:
+                    </label>
+                    <textarea
+                      value={description}
+                      onChange={(e) => setDescription(e.target.value)}
+                      id="description"
+                      placeholder="description"
+                      className="border px-2 py-1 rounded-md shadow-sm outline-none ring-blue-400 focus:ring-2 focus:ring-primary"
                     />
                   </div>
                   <div className="flex flex-col ">
@@ -166,7 +232,26 @@ const FacultyAssignments = () => {
                       />
                     </div>
                   </div>
+                  <div>
+                    <label htmlFor="attachment" className="">
+                      Attachment:
+                    </label>
+                    <Input
+                      onChange={handleAssignment}
+                      type="file"
+                      id="attachment"
+                    />
+                    {uploadProgress > 0 && (
+                      <div className="mt-2">
+                        <Progress value={uploadProgress} />
+                        <div className="text-center">
+                          {Math.round(uploadProgress)}%
+                        </div>
+                      </div>
+                    )}
+                  </div>
                   <Button
+                    disabled={uploadProgress && uploadProgress < 100}
                     type="submit"
                     variant="default"
                     className="btn w-full"
@@ -180,7 +265,7 @@ const FacultyAssignments = () => {
           </Dialog>
         </div>
         <div className="flex  flex-col gap-2">
-          {assignments.map((assignment) => (
+          {assignments?.map((assignment) => (
             <div
               className="flex justify-between items-center border p-3 rounded hover:bg-gray-100 cursor-pointer"
               key={assignment.name}

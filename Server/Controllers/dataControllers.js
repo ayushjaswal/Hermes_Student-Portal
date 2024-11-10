@@ -57,9 +57,7 @@ export const inserSingleStudent = async (req, res) => {
     const branchDb = await branch.findOne({ branchName });
 
     const branchId = branchDb?._id;
-    console.log({ branchId });
     let subjectArray = [];
-    console.log(subjects);
     for (let i = 0; i < subjects?.length; i++) {
       const normalizedCode = subjects[i].replace(/[\u2010]/g, "‐");
       const subjectDb = await subject.findOne({
@@ -67,7 +65,6 @@ export const inserSingleStudent = async (req, res) => {
       });
       subjectArray.push(subjectDb?._id);
     }
-    console.log(subjectArray);
     const newStudent = await student.create({
       email,
       enrollment,

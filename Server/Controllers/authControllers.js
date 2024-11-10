@@ -68,7 +68,6 @@ export const loginUser = async (req, res) => {
                   .status(500)
                   .json({ error: "Error generating token" });
               }
-              console.log(token);
               res.cookie("token", token, {
                 httpOnly: true,
                 secure: true,
@@ -79,14 +78,11 @@ export const loginUser = async (req, res) => {
           if (isFaculty) {
             // Stimulate fetching data of faculty from StudentUser.model
             const facultyData = await faculty.findOne({ email });
-            console.log(facultyData);
             return res.status(200).json({ isFaculty: true, facultyData });
           } else {
             // Stimulate fetching data of faculty from StudentUser.model
 
             const studentData = await student.findOne({ email });
-            console.log("Student logged in successfully");
-            console.log(studentData);
             return res.status(200).json(studentData);
           }
         }
@@ -142,7 +138,6 @@ export const tokenLogin = async (req, res) => {
       const facultyData = await faculty
         .findOne({ email })
         .populate(["classroom", "subjects"]);
-      console.log(facultyData)
       return res.status(200).json({ isFaculty: true, facultyData});
     } else {
       const result = await student
@@ -170,9 +165,7 @@ export const editProfile = async (req, res) => {
   try {
     const { ABCId, DOB, avatar } = req.body;
     const { email } = jwtDecode(req.token);
-    console.log(email);
     const userDb = await student.updateOne({ email }, { avatar, DOB, ABCId });
-    console.log(userDb);
     if (userDb) {
       return res
         .status(200)

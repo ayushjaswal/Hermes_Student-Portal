@@ -34,6 +34,7 @@ import http from "http";
 import dataRoutes from "./Routes/dataRoutes.js";
 import assignmentRoutes from "./Routes/AssignmentRoutes.js";
 import messagesRoutes from "./Routes/messageRoutes.js";
+import submissionRoutes from "./Routes/submissionRoutes.js";
 import { sendRoomMessage } from "./Controllers/messageControllers.js";
 dotenv.config(); // for parsing env files
 
@@ -76,6 +77,7 @@ app.use("/auth", authRoutes);
 app.use("/data", dataRoutes);
 app.use("/class", classRoutes);
 app.use("/assignment", assignmentRoutes);
+app.use("/submission", submissionRoutes);
 // app.use("/messages", messagesRoutes)
 
 // Socket.io setup and related Instances
@@ -89,14 +91,24 @@ io.on("connection", (socket) => {
   });
 
   //for message related instance
-  socket.on("message", (message) => {
-    console.log("New message:", message);
-    io.to(message.roomId).emit("roomMsg", {
-      message: message.message,
-      sender: { email: message.senderEmail },
-    });
-    sendRoomMessage(message);
+  socket.on("message", async (message) => {
+    try {
+      const messageDb = await sendRoomMessage(message);
+
+      if (messageDb) {
+        io.to(message.roomId).emit("roomMsg", {
+          message: messageDb.message,
+          sender: { email: message.senderEmail },
+          createdAt: messageDb.createdAt
+        });
+      } else {
+        console.log("Message not saved to the database");
+      }
+    } catch (error) {
+      console.error("Error processing message:", error);
+    }
   });
+  
 
   //for notification related instance
   socket.on("notification", (notification) => {

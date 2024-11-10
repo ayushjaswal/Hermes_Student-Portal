@@ -23,7 +23,7 @@ export const fetchAssignmentById = async (req, res) => {
       {
         path: "submissions",
         populate: {
-          path: "student",
+          path: "studentId",
           select: "name",
         },
       },
@@ -47,13 +47,14 @@ export const fetchAssignmentById = async (req, res) => {
 
 export const createAssignment = async (req, res) => {
   try {
-    const { name, dueDate, subjectId, classroomId, assignedTeacher } = req.body;
+    const { name, dueDate, subjectId, classroomId, assignedTeacher, attachment } = req.body;
     const newAssignment = await assignment.create({
       name,
       dueDate,
       subjectId,
       classroomId,
       assignedTeacher,
+      attachment
     });
     if (newAssignment) {
       return res.status(201).json(newAssignment);
@@ -70,7 +71,7 @@ export const createAssignment = async (req, res) => {
 export const getSubjectAssignments = async (req, res) => {
   try {
     const { classroomId } = req.params;
-    const assignments = await assignment.find({ classroomId }).populate(["subjectId", "assignedTeacher" ]);
+    const assignments = await assignment.find({ classroomId }).populate(["subjectId", "assignedTeacher", "submissions" ]);
 
     if (assignments.length === 0) {
       return res.status(404).json({ message: "No assignments found for this classroom" });
@@ -91,3 +92,21 @@ export const getSubjectAssignments = async (req, res) => {
     return res.status(500).json({ message: "Error fetching assignments" });
   }
 };
+
+export const deleteAssignment = async (req, res) => {
+  try {
+    const { assignmentId } = req.params;
+    const deletedAssignment = await assignment.findByIdAndDelete(assignmentId);
+    if (deletedAssignment) {
+      await submission.deleteMany({ assignmentId });
+      return res.status(200).json({ message: "Assignment deleted successfully" });
+    } else {
+      return res
+       .status(404)
+       .json({ message: "No assignment found with this ID" });
+    }
+  } catch (error) {
+    console.log(error);
+    return res.status(500).json({ message: "Error deleting assignment" });
+  }
+}

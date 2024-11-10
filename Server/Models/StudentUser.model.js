@@ -14,6 +14,7 @@ const studentUserSchema = new Schema(
       { type: mongoose.Types.ObjectId, required: true, ref: "subject" },
     ],
     classroom: { type: mongoose.Types.ObjectId, ref: "classroom" },
+    submissions: [{type: mongoose.Schema.Types.ObjectId, ref: "submission"  }],
   },
   { timestamps: true }
 );

@@ -38,13 +38,13 @@ export const getRoom = async (req, res) => {
     const { roomId } = req.params;
     const roomDb = await classroom.findById(roomId).populate({
       path: "messages",
-      select: "message sender",
+      select: "message sender createdAt",
       populate: {
         path: "sender",
         select: "email",
       },
     });
-
+    console.log(roomDb);
     if (roomDb) {
       return res.status(200).json(roomDb);
     } else {
