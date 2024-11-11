@@ -25,6 +25,7 @@ import FacultyAssignments from "./Pages/FacultyAssignments.jsx";
 import FacultyContact from "./Pages/FacultyContact.jsx";
 import FacultyAssignmentSubmission from "./Pages/FacultyAssignmentSubmission.jsx";
 import AssignmentPage from "./Pages/AssignmentPage.jsx";
+import FacultyContactMessage from "./Pages/FacultyContactMessage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -164,6 +165,14 @@ const router = createBrowserRouter([
     element: (
       <ProtectedRoute>
         <AssignmentPage />
+      </ProtectedRoute>
+    ),
+  },
+  {
+    path: "/forum-messages/:messageId",
+    element: (
+      <ProtectedRoute>
+        <FacultyContactMessage />
       </ProtectedRoute>
     ),
   },

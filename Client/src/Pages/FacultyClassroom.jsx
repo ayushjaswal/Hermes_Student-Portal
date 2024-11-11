@@ -106,9 +106,18 @@ const FacultyClassroom = () => {
                   {/* Date label with auto-scaling width, rounded edges, and light blue background */}
                   {messageDate !== prevMessageDate && (
                     <div className="text-center w-full text-xs text-gray-500 mb-2 px-3 py-1 ">
-                      <div className="inline-block bg-blue-100 rounded-full px-3 py-1">
-                        {messageDate}
-                      </div>
+                      {new Date().toLocaleDateString() === messageDate ? (
+                        <div>
+                          <hr className="border-t border-gray-200 mt-2" />
+                          <div className="inline-block bg-blue-100 rounded-full px-3 py-1 shadow-sm mt-2">
+                            Today
+                          </div>
+                        </div>
+                      ) : (
+                        <div className="inline-block bg-blue-100 rounded-full px-3 py-1 shadow-sm  ">
+                          {messageDate}
+                        </div>
+                      )}
                     </div>
                   )}
 

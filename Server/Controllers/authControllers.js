@@ -1,16 +1,16 @@
 /**
  * authControllers.js
- *
- * This file contains the controller functions for handling authentication
- * and authorization-related functionality within the Student Portal project.
- * Specifically, it manages the functionality associated with the /auth route.
- * This module is imported by the `authRoutes` route file.
- *
- * Controller Functions:
- * - `loginUser`: Handles user login requests. It responds with different status codes
- *   based on the outcome of the request.
- *
- * Error Handling:
+*
+* This file contains the controller functions for handling authentication
+* and authorization-related functionality within the Student Portal project.
+* Specifically, it manages the functionality associated with the /auth route.
+* This module is imported by the `authRoutes` route file.
+*
+* Controller Functions:
+* - `loginUser`: Handles user login requests. It responds with different status codes
+*   based on the outcome of the request.
+*
+* Error Handling:
  * - Each controller function includes a `try-catch` block. The `catch` block logs
  *   any errors to the console and returns an appropriate error response to the client.
  *
@@ -31,6 +31,7 @@ import faculty from "../Models/FacultyUser.model.js";
 import jwt from "jsonwebtoken";
 import dotenv from "dotenv";
 import { jwtDecode } from "jwt-decode";
+import subject from "../Models/Subject.model.js";
 
 dotenv.config();
 const jwtPrivateKey = process.env.JWT_PRIVATE_KEY;
@@ -176,5 +177,42 @@ export const editProfile = async (req, res) => {
   } catch (error) {
     console.error(error);
     return res.status(500).json({ error: error.message });
+  }
+};
+
+
+export const getFacultyByStudentSubjects = async (req, res) => {
+  try {
+    const { studentId } = req.params;
+
+    // Fetch the student document by studentId
+    const studentDb = await student.findById(studentId).populate({
+      path: "subjects",
+      populate: {
+        path: "associatedFaculty",  // Populate faculty for each subject
+        select: "name email",  // Select only necessary fields for faculty
+      },
+    });
+
+    if (!studentDb) {
+      return res.status(404).json({ error: "Student not found" });
+    }
+
+    // Collect all associated faculty from the student's subjects
+    const facultySet = new Set(); // Set to eliminate duplicates
+
+    studentDb.subjects.forEach(subject => {
+      subject.associatedFaculty.forEach(faculty => {
+        facultySet.add(JSON.stringify(faculty)); // Add faculty to set
+      });
+    });
+
+    // Convert Set back to an array
+    const uniqueFaculty = Array.from(facultySet).map(faculty => JSON.parse(faculty));
+
+    res.status(200).json(uniqueFaculty);  // Return unique faculty list
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: "Failed to retrieve faculty" });
   }
 };
