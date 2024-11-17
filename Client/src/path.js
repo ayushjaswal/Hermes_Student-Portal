@@ -1,4 +1,4 @@
-export const path = import.meta.env.VITE_PATH
+export const path = "https://hermesstudent-portal-production.up.railway.app";
 
 export const config = {
   baseURL: path,
@@ -7,4 +7,4 @@ export const config = {
   },
   withCredentials: true,
 };
-console.log(config)
+console.log(config);
