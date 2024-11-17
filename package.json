@@ -9,7 +9,9 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "@radix-ui/react-tooltip": "^1.1.4"
+  },
   "devDependencies": {
     "concurrently": "^9.0.1"
   }

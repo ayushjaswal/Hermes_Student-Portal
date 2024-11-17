@@ -275,6 +275,7 @@ const FacultyAssignments = () => {
             >
               <div>
                 <div className="title">{assignment.name}</div>
+                <div>{assignment.subjectId.paperName}</div>
                 <div>Due date: {assignment.dueDate.split("T")[0]}</div>
               </div>
               <div className="title">

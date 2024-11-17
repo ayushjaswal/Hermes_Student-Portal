@@ -135,6 +135,12 @@ const Assignment = () => {
                       </div>
                     </div>
                   )}
+                  <div>
+                    <div>{assignment.subjectId.paperName}</div>
+                    <div className="font-medium">
+                      {assignment.assignedTeacher.name}
+                    </div>
+                  </div>
                   {submitted && (
                     <div className="bg-red-300 px-2 text-center rounded-full ">
                       Submitted

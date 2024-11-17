@@ -19,7 +19,6 @@ export const sendRoomMessage = async ({ message: messageVal, roomId, senderEmail
     // Find the user in the database
     const userDB = await user.findOne({ email: senderEmail });
     if (userDB) {
-      console.log(userDB);
 
       const messagesCreate = await message.create({
         classroomId: roomId,

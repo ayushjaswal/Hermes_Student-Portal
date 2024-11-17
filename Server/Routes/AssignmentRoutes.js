@@ -13,6 +13,7 @@ import {
   fetchAssignmentById,
   getSubjectAssignments,
   deleteAssignment,
+  getSubmittedAssignments,
 } from "../Controllers/assignmentController.js";
 import { authorization } from "../middlewares/auth.js";
 
@@ -23,5 +24,6 @@ router.get("/get-assignment/:assignmentId", authorization, fetchAssignmentById);
 router.post("/create-assignment", authorization, createAssignment);
 router.delete("/delete-assignment/:assignmentId", authorization, deleteAssignment);
 router.get("/classroom/:classroomId", authorization, getSubjectAssignments);
+router.get("/:studentId/get-submitted-assignments/:subjectId", authorization, getSubmittedAssignments);
 // Export the router for use in the main server file
 export default router;

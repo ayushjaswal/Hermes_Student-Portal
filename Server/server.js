@@ -37,6 +37,7 @@ import messagesRoutes from "./Routes/messageRoutes.js";
 import submissionRoutes from "./Routes/submissionRoutes.js";
 import { sendRoomMessage } from "./Controllers/messageControllers.js";
 import contactRoutes from "./Routes/contactRoutes.js"
+import resultRoutes from "./Routes/resultRoutes.js"
 
 dotenv.config(); // for parsing env files
 
@@ -81,6 +82,7 @@ app.use("/class", classRoutes);
 app.use("/assignment", assignmentRoutes);
 app.use("/submission", submissionRoutes);
 app.use("/contact", contactRoutes);
+app.use("/result", resultRoutes)
 // app.use("/messages", messagesRoutes)
 
 // Socket.io setup and related Instances

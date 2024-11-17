@@ -20,8 +20,11 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Input } from "@/components/ui/input";
 import { toast, Toaster } from "sonner";
+import { useLocation } from "react-router-dom";
 
 const ForumPage = () => {
+  const location = useLocation();
+  const { selectedTeacher } = location.state || {};
   const studentId = useSelector((state) => state.user._id);
   const [formData, setFormData] = useState({
     facultyEmail: "",
@@ -30,7 +33,9 @@ const ForumPage = () => {
     content: "",
   });
   const [facultyOptions, setFacultyOptions] = useState([]);
-  const [selectedFaculty, setSelectedFaculty] = useState("");
+  const [selectedFaculty, setSelectedFaculty] = useState(
+    selectedTeacher?._id ? selectedTeacher?._id : ""
+  );
   const [closedCaptioOptions, setClosedCaptionOptions] = useState([]);
 
   useEffect(() => {

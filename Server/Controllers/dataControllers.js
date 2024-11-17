@@ -83,8 +83,6 @@ export const inserSingleFaculty = async (req, res) => {
   try {
     const { email, name, subjects, avatar } = req.body;
     let subjectArray = [];
-    console.log(subjects);
-
     const newFaculty = await faculty.create({
       email,
       name,

@@ -44,7 +44,6 @@ export const getRoom = async (req, res) => {
         select: "email",
       },
     });
-    console.log(roomDb);
     if (roomDb) {
       return res.status(200).json(roomDb);
     } else {
